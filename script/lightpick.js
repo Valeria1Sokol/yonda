@@ -992,7 +992,7 @@
 //                    top = (rect.top + window.pageYOffset) - calRect.height;
                 } else {
 //                    top = rect.bottom + window.pageYOffset;
-                    top = rect.top + $('#demo-3_1').offset().top;
+                    top = rect.bottom + $('#demo-3_1').offset().top;
 
                 }
             } else {
