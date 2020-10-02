@@ -1,0 +1,221 @@
+.sliderMem .owl-carousel {
+    width: 100%;
+}
+
+.sliderMem .item {
+    width: 100%;
+    height: 511px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    background-image: url(../img/slider_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    color: white;
+    font-weight: 300;
+    padding: 0 110px 0 0;
+}
+
+.sliderMem .price {
+    font-weight: 500;
+}
+
+.sliderMem .find_btn {
+    border: 2px solid white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 220px;
+    height: 46px;
+    color: white;
+    cursor: pointer;
+}
+.sliderMem .find_btn:hover{
+    border: 2px solid white;
+     color: white;
+}
+
+.sliderMem .item div {
+    padding: 55px 0 55px 55px;
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.sliderMem .item h1 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.sliderMem img {
+    width: 255px;
+}
+
+.sliderMem .owl-carousel .owl-dots {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    margin: 69px 0 0;
+    height: 50px;
+}
+
+.sliderMem .owl-carousel button.owl-dot {
+    background: #b3b3b3;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 1.5vw 0 0;
+}
+
+.sliderMem .owl-carousel button.active {
+    background: #8739f6;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+}
+
+.owl-carousel button.owl-dot:active,
+.owl-carousel button.owl-dot:focus {
+    outline: none;
+}
+
+.slide_item {
+    padding: 20px;
+}
+
+.owl-nav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    float: left;
+    margin: 69px 0 0;
+    padding: 0 0 0 21px;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+    background-color: #8739f6;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 67px 0 0;
+    background-image: url(../img/arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16%;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    transform: rotate(180deg);
+}
+
+.owl-carousel .owl-nav button.owl-next span,
+.owl-carousel .owl-nav button.owl-prev span {
+    display: none;
+}
+
+.owl-carousel .owl-nav button.owl-next:focus,
+.owl-carousel .owl-nav button.owl-prev:focus,
+.owl-carousel .owl-nav button.owl-next:active,
+.owl-carousel .owl-nav button.owl-prev:active {
+    outline: none;
+}
+
+@media all and (max-width:1440px) {
+    .sliderMem .item {
+        padding: 0 37px 0 0;
+    }
+
+    .sliderMem img {
+        width: 234px;
+    }
+}
+
+@media all and (max-width:1024px) {
+    .sliderMem .item div {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+
+    .sliderMem .owl-carousel .owl-item img {
+        position: absolute;
+        z-index: 0;
+        right: 0;
+    }
+}
+
+@media all and (max-width:800px) {
+    .sliderMem .item {
+        height: auto;
+        padding: 0;
+    }
+
+    .sliderMem .owl-carousel .owl-item img,
+    .sliderMem .find_btn {
+        display: none;
+    }
+
+    .sliderMem .item div {
+        padding: 32px 28px;
+        justify-content: flex-start;
+    }
+
+    .sliderMem .item h1 {
+        font-size: 24px;
+        width: 70%;
+    }
+
+    .sliderMem p {
+        font-size: 12px;
+    }
+
+    .sliderMem .price {
+        font-size: 18px;
+        margin: 28px 0 14px;
+    }
+
+    .sliderMem .owl-nav {
+        width: 100%;
+        margin-top: 30px;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        margin: 0;
+    }
+
+    .sliderMem .owl-carousel {
+        margin-top: 55px;
+    }
+
+}
+
+@media all and (max-width:375px) {
+    .sliderMem .item h1 {
+        width: 100%;
+    }
+}
