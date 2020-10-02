@@ -988,7 +988,8 @@
 
             if (orientation[0] == 'auto' || !(/top|bottom/.test(orientation[0]))) {
                 if (rect.bottom + calRect.height > window.innerHeight && window.pageYOffset > calRect.height) {
-                    top = (rect.top + window.pageYOffset) - calRect.height;
+                    top = (rect.top + $('#demo-3_1').offset().top) - calRect.height;
+//                    top = (rect.top + window.pageYOffset) - calRect.height;
                 } else {
                     top = rect.bottom + window.pageYOffset;
 
@@ -998,7 +999,8 @@
                 top = rect[orientation[0]] + $('#demo-3_1').offset().top;
 
                 if (orientation[0] == 'top') {
-                    top -= calRect.height;
+//                    top -= calRect.height;
+                    top = rect[orientation[0]] + $('#demo-3_1').offset().top;
 //                    console.log($('#demo-3_1').top);
                 }
             }
