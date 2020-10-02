@@ -1789,7 +1789,7 @@ header {
 
     .lightpick {
         left: 0 !important;
-        margin: 0 auto;
+        margin: 0 1vw;
     }
 
 }
@@ -1819,7 +1819,7 @@ header {
 
     .lightpick {
         width: 313px;
-        margin: 2.3vw 0 0;
+        margin:2.3vw 6vw 0;
         padding: 10px;
 
     }
