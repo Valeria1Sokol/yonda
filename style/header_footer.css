@@ -57,7 +57,7 @@ header {
 }
 
 .logo {
-    width: 220px;
+    width: 220px!important;
 }
 
 .menu_desctop {
