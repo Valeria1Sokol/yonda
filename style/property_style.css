@@ -1787,6 +1787,10 @@ header {
         padding: 0 5.2vw;
     }
 
+    .lightpick {
+        left: 0 !important;
+    }
+
 }
 
 @media all and (max-width:375px) {

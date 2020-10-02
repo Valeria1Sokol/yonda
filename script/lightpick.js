@@ -1000,7 +1000,7 @@
 
                 if (orientation[0] == 'top') {
 //                    top -= calRect.height;
-                    top = rect[orientation[0]] + $('#demo-3_1').offset().top - 100;
+                    top = rect[orientation[0]] + $('#demo-3_1').offset().top - 200;
 //                    console.log($('#demo-3_1').top);
                 }
             }
