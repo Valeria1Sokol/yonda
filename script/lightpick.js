@@ -991,8 +991,8 @@
                     top = (rect.top + $('#demo-3_1').offset().top) - calRect.height;
 //                    top = (rect.top + window.pageYOffset) - calRect.height;
                 } else {
-//                    top = rect.bottom + window.pageYOffset;
-                    top = rect.bottom + $('#demo-3_1').offset().top;
+                    top = rect.bottom + window.pageYOffset;
+//                    top = rect.bottom + $('#demo-3_1').offset().top;
 
                 }
             } else {
@@ -1001,7 +1001,7 @@
 
                 if (orientation[0] == 'top') {
 //                    top -= calRect.height;
-                    top = rect[orientation[0]] + $('#demo-3_1').offset().top + 200;
+                    top = rect[orientation[0]] + $('#demo-3_1').offset().top;
 //                    console.log($('#demo-3_1').top);
                 }
             }
