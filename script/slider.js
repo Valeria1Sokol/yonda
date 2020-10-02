@@ -6,7 +6,7 @@ const itemCount = items.length;
 const nextItem = document.querySelector('.arrowNext');
 const previousItem = document.querySelector('.arrowPrew');
 let count = 0;
-var num = document.querySelector('.num');
+var number = document.querySelector('.num');
 var a = 1;
 //num.innerHTML = 'Page ' + a + ' ( of ' + items.length + ' )';
 
@@ -17,7 +17,7 @@ function showNextItem() {
     if (count < itemCount - 1) {
         count++;
         a+=1;
-        num.innerHTML = 'Page ' + a + ' ( of ' + items.length + ' )';
+        number.innerHTML = 'Page ' + a + ' ( of ' + items.length + ' )';
     }
     if (count == itemCount - 1) {
         $('.next').addClass('nextDefoult');
@@ -34,7 +34,7 @@ function showPreviousItem() {
     if (count > 0) {
         count--;
         a--;
-        num.innerHTML = 'Page ' + a + ' ( of ' + items.length + ' )';
+        number.innerHTML = 'Page ' + a + ' ( of ' + items.length + ' )';
     }
     if (count == 0) {
         $('.previous').addClass('previousDefoult');

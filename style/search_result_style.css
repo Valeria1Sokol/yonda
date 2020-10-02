@@ -1372,6 +1372,11 @@ section {
         flex-wrap: wrap;
     }
 }
+@media all and (max-width:360px) {
+    .result_box .sort_mobile div p {
+    margin: 0 0 13px;
+}
+}
 
 @media all and (max-width:320px) {
     .result_box .sort_mobile div p {

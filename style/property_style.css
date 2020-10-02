@@ -486,6 +486,7 @@ header {
     top: 2.3vw !important;
     border: none;
     margin: 0;
+    z-index: 9;
 }
 
 .search_section .guest .inputs {
@@ -1777,7 +1778,7 @@ header {
     }
 
     .search_section .guest {
-        left: 0vw !important;
+        left: -2vw !important;
         width: 120%;
     }
 
