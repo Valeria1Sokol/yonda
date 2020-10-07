@@ -151,7 +151,7 @@
                                     <p class="text">Children (Age 0-17)</p>
                                     <div class="number">
                                         <span class="minus">-</span>
-                                        <input type="text" value="1" id="child" />
+                                        <input type="text" value="0" id="child" />
                                         <span class="plus_child">+</span>
                                     </div>
                                 </div>
@@ -274,7 +274,9 @@
         <div class="container_box">
             <div class="top">
                 <div class="left_box">
-                    <div class="accordion" id="accordionExample">
+                   <div class="accordion" id="accordionExample">
+                    </div>
+                    <div class="accordion">
                         <div class="card">
                             <div class="title" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 Quick Info
@@ -293,6 +295,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="accordion">
                         <div class="card">
                             <div class="title" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
@@ -439,54 +442,54 @@
     </section>
 
     <footer>
-       <div class="container_box">
-        <div class="row">
-            <a href="index.html"><img class="logo" alt="yonda" src="img/Yonda_POS_black.svg"></a>
-        </div>
-        <div class="row">
-            <div class="left">
-                <div class="column">
-                    <a href="">Privacy Policy</a>
-                    <a href="">Terms & Conditions</a>
-                    <a href="">Data Collection & Usage</a>
-                    <a href="">Legal Notices</a>
+        <div class="container_box">
+            <div class="row">
+                <a href="index.html"><img class="logo" alt="yonda" src="img/Yonda_POS_black.svg"></a>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <div class="column">
+                        <a href="">Privacy Policy</a>
+                        <a href="">Terms & Conditions</a>
+                        <a href="">Data Collection & Usage</a>
+                        <a href="">Legal Notices</a>
+                    </div>
+                    <div class="column">
+                        <a href="">Corporate information</a>
+                        <a href="">About Yonda</a>
+                        <a href="">Jobs</a>
+                        <a href="">Media</a>
+                    </div>
+                    <div class="column">
+                        <a href="">Acount Help</a>
+                        <a href="">Contact Us</a>
+                        <div class="social">
+                            <a href="" class="face"></a>
+                            <a href="" class="inst"></a>
+                            <a href="" class="pint"></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="column">
-                    <a href="">Corporate information</a>
-                    <a href="">About Yonda</a>
-                    <a href="">Jobs</a>
-                    <a href="">Media</a>
-                </div>
-                <div class="column">
-                    <a href="">Acount Help</a>
-                    <a href="">Contact Us</a>
-                    <div class="social">
-                        <a href="" class="face"></a>
-                        <a href="" class="inst"></a>
-                        <a href="" class="pint"></a>
+                <div class="right">
+                    <div class="column">
+                        <a href="" class="app"><img src="img/app.png" alt=""></a>
+                        <p>Yonda App coming soon.</p>
+                        <a href="">What to be notified?</a>
                     </div>
                 </div>
             </div>
-            <div class="right">
-                <div class="column">
-                    <a href="" class="app"><img src="img/app.png" alt=""></a>
-                    <p>Yonda App coming soon.</p>
-                    <a href="">What to be notified?</a>
+            <div class="row">
+                <div class="bottom">
+                    <p class="text">Powered by Australia’s favourite travel companions</p>
+                    <div class="img_box">
+                        <img class="icon1" alt="" src="img/jetstar_w.png">
+                        <img class="icon2" alt="" src="img/icon2.png">
+                        <img class="icon3" alt="" src="img/icon3.png">
+                        <img class="icon4" alt="" src="img/icon4F.png">
+                        <img class="icon5" alt="" src="img/icon5F.png">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="bottom">
-                <p class="text">Powered by Australia’s favourite travel companions</p>
-                <div class="img_box">
-                    <img class="icon1" alt="" src="img/jetstar_w.png">
-                    <img class="icon2" alt="" src="img/icon2.png">
-                    <img class="icon3" alt="" src="img/icon3.png">
-                    <img class="icon4" alt="" src="img/icon4F.png">
-                    <img class="icon5" alt="" src="img/icon5F.png">
-                </div>
-            </div>
-        </div>
         </div>
     </footer>
 
@@ -544,6 +547,7 @@
             });
         }
         console.log($('#demo-3_1').offset().top);
+
     </script>
 
     <script src="script/owl.carousel.min.js"></script>
@@ -577,14 +581,25 @@
             var adult = document.getElementById("adult").value;
             var child = document.getElementById("child").value;
             var count = 0;
-            count = Number(adult) + Number(child);
+            var child_num = $('#child').val();
+            if (child_num > 0) {
+                child_num = 1;
+                count = Number(adult) + child_num;
+            } else {
+                count = Number(adult);
+            }
+
             //            console.log(adult);
-            myP.innerHTML = "Room1, " + count + "guests ( " + adult + " adult +" + child + " child)";
+            myP.innerHTML = "Room1, " + count + "guests ( " + adult + " adult +" + child_num + " child)";
             jQuery.noConflict();
             $(this).parents('.dropdown-menu').toggleClass('show');
+            console.log(child_num);
         })
+  
     </script>
 
 
 
-</body></html>
+</body>
+
+</html>

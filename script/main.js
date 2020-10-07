@@ -160,14 +160,11 @@ $(document).ready(function () {
         var $input = $(this).parent().find('input');
         if ($input.val() <= 16) {
             $input.val(parseInt($input.val()) + 1);
-            
-        } 
-//        else {
-//            $input.change();
-//            return false;
-//        }
+        }
 
-$input.change();
-            return false;
+
+        $input.change();
+        return false;
     });
+
 });

@@ -561,6 +561,7 @@ header {
     border: 1px solid #ededec;
     border-radius: 6px;
     padding: 0 10px;
+    background-color: white;
     background-image: url(../img/arrow_down.png);
     background-position: 93% center;
     background-repeat: no-repeat;

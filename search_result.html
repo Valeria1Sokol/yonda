@@ -90,7 +90,7 @@
                                     <p class="text">Children (Age 0-17)</p>
                                     <div class="number">
                                         <span class="minus">-</span>
-                                        <input type="text" value="1" id="child" />
+                                        <input type="text" value="0" id="child" />
                                         <span class="plus_child">+</span>
                                     </div>
                                 </div>
@@ -909,7 +909,15 @@
             var adult = document.getElementById("adult").value;
             var child = document.getElementById("child").value;
             var count = 0;
-            count = Number(adult) + Number(child);
+            var child_num = $('#child').val();
+            if (child_num > 0) {
+                child_num = 1;
+                count = Number(adult) +  child_num;
+            }
+            else
+                {
+                    count = Number(adult);
+                }
             myP.innerHTML = "Room1, " + count + " guests";
             jQuery.noConflict();
             $(this).parents('.dropdown-menu').toggleClass('show');
