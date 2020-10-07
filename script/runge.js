@@ -42,9 +42,9 @@ inputRight.addEventListener("input", setRightValue);
 
 var inputLeft2 = document.getElementById("input-left2");
 var inputRight2 = document.getElementById("input-right2");
-var thumbLeft2 = document.querySelector(".slider2 > .thumb.left");
-var thumbRight2 = document.querySelector(".slider2 > .thumb.right");
-var range2 = document.querySelector(".slider2 > .range");
+var thumbLeft2 = document.querySelector(".slider4 > .thumb.left");
+var thumbRight2 = document.querySelector(".slider4 > .thumb.right");
+var range2 = document.querySelector(".slider4 > .range");
 
 function setLeftValue2() {
     var _this = inputLeft2,

@@ -30,8 +30,7 @@ header {
 
 .container_box {
     width: 100%;
-    max-width: 1455px;
-    display: flex;
+    max-width: 1200px;
 }
 
 .full_page_slider {
@@ -89,6 +88,11 @@ header {
     position: relative;
     z-index: 1;
     cursor: pointer;
+    opacity: 0;
+}
+
+.full_page_slider .owl-carousel .center .item p {
+    opacity: 1;
 }
 
 .full_page_slider .owl-carousel .center .item {
@@ -525,7 +529,8 @@ header {
 }
 
 .search_section .guest .minus,
-.search_section .guest .plus {
+.search_section .guest .plus,
+.search_section .guest .plus_child {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -683,7 +688,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 670px;
+    width: 580px;
     color: black;
 }
 
@@ -742,9 +747,9 @@ header {
 }
 
 .serch_res .left .btn_box {
-    width: 55%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
@@ -767,6 +772,7 @@ header {
 .serch_res .left .btn_box .black_btn {
     background-color: black;
     color: white;
+    margin: 0 30px 0 0;
 }
 
 .serch_res .left .btn_box .black_btn:hover {
@@ -802,7 +808,7 @@ header {
     justify-content: flex-start;
     align-items: flex-start;
     letter-spacing: 0px;
-    width: 539px;
+    width: 500px;
 }
 
 .serch_res .right .box {
@@ -944,7 +950,7 @@ header {
 
 .serch_res .price_box span {
     color: #b3b3b3;
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
 }
 
@@ -977,7 +983,7 @@ header {
 }
 
 .section4 .top .left_box {
-    width: 725px;
+    width: 706px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1000,6 +1006,27 @@ header {
 
 .section4 .quick_info {
     width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section4 .quick_info .info {
+    list-style: none;
+    float: left;
+}
+
+.section4 .accordion {
+    width: 100%;
+}
+
+.section4 .card {
+    border: none;
+}
+
+.section4 .card-body {
+    padding: 0;
 }
 
 .section4 .text {
@@ -1016,9 +1043,9 @@ header {
 
 .section4 .btn_box {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    width: 64%;
+    width: 100%;
     margin: 0 0 20px;
 }
 
@@ -1041,6 +1068,7 @@ header {
 .section4 .btn_box .black_btn {
     background-color: black;
     color: white;
+    margin: 0 30px 0 0;
 }
 
 .section4 .btn_box .black_btn:hover {
@@ -1059,7 +1087,7 @@ header {
 }
 
 .section4 .right_box {
-    width: 460px;
+    width: 440px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1167,6 +1195,10 @@ header {
     background-size: cover;
 }
 
+.section5 .container_box {
+    display: flex;
+}
+
 .section5 p {
     font-size: 16px;
     font-weight: 600;
@@ -1199,44 +1231,7 @@ header {
     align-items: center;
 }
 
-@media all and (max-width:1440px) {
-    .search_section .guest {
-        width: 47.5vw;
-        left: -9vw !important;
-    }
-
-    .search_section .guest .count:nth-of-type(3) {
-        width: 21.5vw;
-    }
-
-    .container_box {
-        max-width: 1200px;
-    }
-
-    .serch_res .left {
-        width: 527px;
-    }
-
-    .serch_res .right {
-        width: 501px;
-    }
-
-    .serch_res .left .btn_box {
-        width: 69%;
-    }
-
-    .section4 .top .left_box {
-        width: 628px;
-    }
-
-    .section4 .quick_info {
-        width: 50%;
-    }
-
-    .section4 .btn_box {
-        width: 75%;
-    }
-}
+@media all and (max-width:1440px) {}
 
 @media all and (max-width:1280px) {
 
@@ -1280,7 +1275,7 @@ header {
 
     .serch_res .left,
     .serch_res .right {
-        width: 400px;
+        width: 420px;
     }
 
     .search_section .serch_res {
@@ -1291,9 +1286,6 @@ header {
         width: 90%;
     }
 
-    .serch_res .right .price_box {
-        flex-direction: column;
-    }
 
     .section4 .top .left_box {
         width: 500px;
@@ -1304,7 +1296,7 @@ header {
     }
 
     .section4 .quick_info {
-        width: 65%;
+        width: 63%;
     }
 
     .section4 .btn_box {
@@ -1319,6 +1311,16 @@ header {
 
     .section5 h1 {
         font-size: 44px;
+    }
+
+    .serch_res .price_box p {
+        font-size: 47px;
+    }
+
+    .serch_res .price_box .purple_btn {
+        width: 190px;
+        height: 55px;
+        font-size: 18px;
     }
 }
 
@@ -1529,7 +1531,7 @@ header {
     }
 
     .serch_res .right .price_box {
-        margin: 55px 0 20px;
+        margin: 40px 0 20px;
         border: none;
         flex-direction: row;
     }
@@ -1612,7 +1614,9 @@ header {
         margin: 0;
     }
 
-    .section4 .right_box .title:first-of-type {
+    .section4 .right_box .title,
+    .section4 .left_box .title,
+    .section4 .left_box .title:first-of-type {
         margin: 30px 0 35px;
     }
 
@@ -1819,7 +1823,7 @@ header {
 
     .lightpick {
         width: 313px;
-        margin:2.3vw 6vw 0;
+        margin: 2.3vw 6vw 0;
         padding: 10px;
 
     }

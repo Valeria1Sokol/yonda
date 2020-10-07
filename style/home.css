@@ -8,7 +8,7 @@ h6 {
 p {
     margin: 0;
     padding: 0;
-   
+
 }
 
 h1 {
@@ -20,22 +20,21 @@ h1 {
     cursor: default;
 }
 
+.container_box {
+    max-width: 1200px;
+    width: 100%;
+}
+
 .section1 {
     width: 100vw;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     background-image: url(../img/section1_bg.png);
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 13vw 12vw 12vw;
+    padding: 13vw 0 12vw;
 }
-
-/*
-.section1 .text_box {
-    max-width: 1675px;
-}
-*/
 
 .section1 p {
     font-size: 12px;
@@ -44,7 +43,6 @@ h1 {
 }
 
 .section1 .btn_box {
-    /*    width: 79%;*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -295,8 +293,8 @@ h1 {
     width: 4px;
     cursor: pointer;
 }
-.close
-{
+
+.close {
     cursor: pointer;
 }
 
@@ -310,14 +308,14 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 8.8vw 0;
+    padding: 6.8vw 0;
 }
 
 
 .slider_tree .owl-carousel {
     width: 100%;
-    max-width: 1600px;
-    margin-top: 100px;
+    max-width: 1200px;
+    margin-top: 80px;
 }
 
 .owl-carousel .owl-stage {
@@ -326,7 +324,7 @@ h1 {
 }
 
 .slide {
-    width: 528px;
+    /*    width: 528px;*/
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -334,7 +332,7 @@ h1 {
 
 .slider_tree .item {
     width: 100%;
-    height: 539px;
+    height: 420px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -346,7 +344,7 @@ h1 {
 }
 
 .slider_tree .item h5 {
-    font-size: 24px;
+    font-size: 16px;
     color: #f9ac90;
     font-weight: 300;
 }
@@ -365,11 +363,11 @@ h1 {
 }
 
 .slider_tree .item .img_block p {
-    width: 170px;
+    width: 100px;
     text-align: center;
     background: white;
     color: black;
-    font-size: 24px;
+    font-size: 12px;
     font-weight: 300;
     position: absolute;
     right: 0;
@@ -384,7 +382,7 @@ h1 {
 
 .slider_tree .item h2 {
     color: black;
-    font-size: 38px;
+    font-size: 21px;
     font-weight: 300;
     margin: 0.53vw 0 0.79vw;
     line-height: inherit;
@@ -400,7 +398,7 @@ h1 {
 
 .slider_tree .price_mem {
     color: #8739f6;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     width: 100%;
 
@@ -427,7 +425,7 @@ h1 {
 }
 
 .slider_tree .price_box p {
-    font-size: 18px;
+    font-size: 14px;
     color: #b3b3b3;
     font-weight: 300;
 }
@@ -435,10 +433,11 @@ h1 {
 .slider_tree .price_box h1 {
     margin: 0;
     line-height: 1;
+    font-size: 2em;
 }
 
 .slider_tree .price_box h1 span {
-    font-size: 24px;
+    font-size: 14px;
     color: #b3b3b3;
     font-weight: 300;
 }
@@ -447,13 +446,13 @@ h1 {
     background-color: black;
     border-radius: 10px;
     color: white;
-    width: 269px;
-    height: 47px;
+    width: 115px;
+    height: 34px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 12px;
     cursor: pointer;
     margin: 0 0 9px;
     font-weight: 300;
@@ -524,8 +523,10 @@ h1 {
 
 .section4 .container_box,
 .section5 .container_box {
+    /*
     max-width: 1445px;
     width: 100%;
+*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -542,11 +543,11 @@ h1 {
 
 .section4 .left,
 .section5 .left {
-    width: 28%;
+    width: 405px;
 }
 
 .section4 .right {
-    width: 58%;
+    width: 760px;
 }
 
 .section4 .right img {
@@ -562,7 +563,7 @@ h1 {
 }
 
 .section4 .left .text:first-of-type {
-    width: 83%;
+    width: 86%;
     margin: 0 0 55px;
 }
 
@@ -608,7 +609,7 @@ h1 {
 }
 
 .section4 .right .text {
-    width: 56%;
+    width: 62%;
 }
 
 .section4 a {
@@ -646,12 +647,17 @@ h1 {
 }
 
 .section5 .left {
-    width: 30%;
+    width: 435px;
 }
 
 .section5 .right {
-    width: 59%;
+    width: 760px;
 }
+
+.sliderMem .item {
+    padding: 0 45px 0 0 !important;
+}
+
 
 .section5 .left .text {
     margin: 0 0 21px;
@@ -677,13 +683,13 @@ h1 {
 .section6 {
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    padding: 9.8vw 0 13.5vw 12.5vw;
+    padding: 9.8vw 0 13.5vw;
 }
 
 .section6 .container_box {
-    /*    max-width: 1680px;*/
+    max-width: 1562px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -752,7 +758,12 @@ h1 {
     background-color: #f5f5f5;
     color: black;
     border-radius: 15px !important;
+    transition: all .5s;
+}
 
+.section6 .collapsed:hover {
+    background-color: #883bf4;
+    color: white;
 }
 
 .section6 .card-body {
@@ -765,11 +776,13 @@ h1 {
 
 
 .section6 img {
-    max-width: 53vw;
+    max-width: 45vw;
     width: 100%;
 }
 
 @media all and (max-width:1600px) {
+
+    /*
     .section6 {
         padding: 9.8vw 0 13.5vw;
     }
@@ -777,17 +790,17 @@ h1 {
     .section6 .container_box {
         max-width: 1500px;
     }
-
-}
-
-@media all and (max-width:1599px) {
-    .slide {
-        width: 33vw;
+*/
+    .section6 .container_box {
+        max-width: 1400px;
     }
+
 }
+
 
 @media all and (max-width:1440px) {
 
+    /*
     .section4 .container_box,
     .section5 .container_box {
         max-width: 1200px;
@@ -805,14 +818,21 @@ h1 {
         width: 36%;
     }
 
+   
+*/
+
     .section6 .container_box {
-        max-width: 1324px;
+        max-width: 1319px;
     }
 }
 
 @media all and (max-width:1280px) {
     .slider_tree .price_box h1 span {
         font-size: 21px;
+    }
+
+    .section6 .container_box {
+        max-width: 1200px;
     }
 }
 
@@ -831,13 +851,20 @@ h1 {
         background-size: 51%;
     }
 
-    .section4 .container_box,
-    .section5 .container_box {
+    .container_box {
         max-width: 900px;
     }
 
     .section4 .left {
         width: 37%;
+    }
+
+    .section4 .right {
+        width: 530px;
+    }
+
+    .section5 .right {
+        width: 473px;
     }
 
     .section4 .right h1 {
@@ -846,6 +873,15 @@ h1 {
 
     .section4 .right .text {
         width: 92%;
+    }
+
+    .slider_tree .owl-carousel {
+        max-width: 900px;
+    }
+
+    .slider_tree .item {
+        height: 375px;
+        padding: 15px;
     }
 
     .section6 .container_box {
@@ -866,7 +902,11 @@ h1 {
 @media all and (max-width:800px) {
     h1 {
         font-size: 36px;
-        line-height: 1.1;
+        line-height: 1.3;
+    }
+
+    .container_box {
+        /*    max-width: 0px;*/
     }
 
     .section1 {
@@ -1028,7 +1068,7 @@ h1 {
 
     .slider_tree .owl-carousel {
         width: 100%;
-        max-width: 85%;
+        max-width: 58%;
         margin-top: 60px;
     }
 
@@ -1048,7 +1088,7 @@ h1 {
 
     .slider_tree .item h2 {
         font-size: 30px;
-         line-height: normal;
+        line-height: normal;
     }
 
     .slider_tree .price_mem,
@@ -1200,60 +1240,52 @@ h1 {
     }
 
 }
-@media all and (max-width:500px)
-{
-     .slider_tree .item {
+
+@media all and (max-width:500px) {
+    .slider_tree .item {
         height: 447px;
     }
+
+    .slider_tree .owl-carousel {
+        max-width: 85%;
+    }
 }
-@media all and (max-width:375px) {
-    .section1 h1 {
-        font-size: 30px;
-        width: 90%;
-        margin: 24px auto 0;
-    }
 
-    .section1 .btn_box {
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .section1 .purple_btn {
-        margin: 0 0 20px;
-    }
-
-    .section1 p {
-        width: 70%;
-        margin: 0 auto 15px;
-    }
-
-    .section1 br {
-        display: none;
+@media all and (max-width:425px) {
+    h1 {
+        font-size: 28px;
+        line-height: 1.4;
     }
 
     .section2 .container_box {
-        max-width: 78%;
+        width: 78%;
+    }
+}
+
+@media all and (max-width:375px) {
+    .btn {
+        font-size: 14px;
+        width: 154px;
     }
 
-    .section2 .top .img_box {
-        width: 86%;
+    .section1 p {
+        font-size: 11px;
     }
 
-    .section2 .top .img_box a {
-        top: -38px;
+    h6 {
+        font-size: 14px;
     }
 
-    .sliderMem .item {
-        height: 307px;
+    .slider_tree .item .price_box {
+        margin-top: 30px;
     }
 
-    .sliderMem .item h1 {
-        width: 93%;
+    .slider_tree .item .stars {
+        width: 51%;
     }
-
-    .section6 .card-header {
-        font-size: 15px;
-    }
+    .section2 .text {
+    font-size: 11px;
+}
 }
 
 @media all and (max-width:320px) {

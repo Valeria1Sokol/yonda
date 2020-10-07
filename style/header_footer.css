@@ -42,14 +42,21 @@ a {
 }
 
 header {
+   
     width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: absolute;
     top: 3.4vw;
-    padding: 0 5.5vw;
+/*    padding: 0 5.5vw;*/
+}
+header .container_box
+{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
 }
 
 .navbar {
@@ -120,14 +127,14 @@ footer {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     border-bottom: 8px solid #8739f6;
     color: white;
     font-size: 13px;
     margin: 0;
-    padding: 6.2vw 9.4vw 1.5vw 6.2vw;
+    padding: 6.2vw 0 1.5vw;
 }
 
 footer .row {
@@ -285,6 +292,10 @@ footer .icon5 {
 }
 
 @media all and (max-width:800px) {
+   .container_box
+    {
+        max-width: 400px;
+    }
     .menu_desctop {
         display: none;
     }
@@ -442,9 +453,13 @@ footer .icon5 {
         border-radius: 2px;
         background-color: #9d3cfb;
         margin: 0 11vw 5px 0;
-/*        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");*/
     }
-/*    */
+}
+@media all and (max-width:500px)
+{
+    .section2 .container_box {
+    width: 78%;
+}
 }
 
 @media all and (max-width:320px) {

@@ -20,6 +20,11 @@ h1 {
 header {
     position: relative;
 }
+.container_box 
+{
+    max-width: 1200px;
+    width: 100%;
+}
 
 .section5 {
     width: 100vw;
@@ -35,8 +40,6 @@ header {
 }
 
 .section5 .container_box {
-    max-width: 1540px;
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -274,7 +277,7 @@ header {
 
 .table_section {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -300,13 +303,13 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 345px;
+   width: 283px;
     height: 125px;
-    padding: 0 35px;
+    padding: 0 20px;
 }
 
 .table_section .tittle_clm {
-    width: 386px;
+    width: 345px;
 }
 
 .table_section .clm h3 {
@@ -413,108 +416,17 @@ header {
     display: none;
 }
 
-@media all and (max-width:1440px) {
-    .section5 .container_box {
-        max-width: 1240px;
-    }
-
-    .table_section {
-        max-width: 1300px;
-    }
-
-    .table_section .clm {
-        width: 280px;
-        padding: 0 12px;
-    }
-
-
-    .all_func .clm {
-        width: 100%;
-    }
-
-    .all_func .row {
-        width: 280px;
-    }
-
-    .all_func .row_func,
-    .table_section .tittle_clm {
-        width: 370px;
-    }
-
-    .table_section .row1 .clm {
-        height: 124px;
-        text-align: center;
-        justify-content: flex-start;
-    }
-
-    .table_section .clm h3 {
-        height: 72px;
-    }
-
-    .all_func .row .clm {
-        height: 55px;
-        justify-content: center;
-    }
-
-
-}
-
 @media all and (max-width:1280px) {
-
-    .section2 .top .img_box {
-        left: -6vw;
-        width: 42.5%;
-    }
-
-    .section2 {
-        background-position: 100% 129%;
-        background-size: 51%;
-    }
-
-    .table_section {
-        max-width: 1072px;
-    }
-
-    .table_section .clm {
-        width: 230px;
-        padding: 0 12px;
-    }
-
-
-    .all_func .clm {
-        width: 100%;
-    }
-
-    .all_func .row {
-        width: 230px;
-    }
-
-    .all_func .row_func,
-    .table_section .tittle_clm {
-        width: 370px;
-    }
-
-    .table_section .row1 .clm {
-        height: 124px;
-        text-align: center;
-        justify-content: flex-start;
-    }
-
-    .table_section .clm h3 {
-        height: 72px;
-    }
-
-    .all_func .row .clm {
-        height: 55px;
-        justify-content: center;
-    }
 
 }
 
 @media all and (max-width:1024px) {
-    .section5 .container_box {
-        margin: 0;
+   .container_box {
         max-width: 900px;
+    }
+    .section5 .container_box
+    {
+        margin: 0;
     }
 
     .section5 .left {
@@ -535,35 +447,31 @@ header {
     }
 
     .table_section .clm {
-        width: 215px;
+        width: 200px;
         padding: 0 12px;
+        font-size: 14px;
     }
 
     .all_func .row_func,
     .table_section .tittle_clm {
-        width: 350px;
+        width: 270px;
+    }
+    .table_section {
+    max-width: 900px;
+    }
+    .table_section .clm h3 {
+    color: #8739f6;
+    font-size: 20px;
+    margin: 0 0 21px;
+}
+    .all_func .row_func .tittle_clm br
+    {
+        display: none;
     }
 }
 
 @media all and (max-width:1023px) {
 
-    /*
-    .table_section .row1 .clm {
-        width: 150px;
-        padding: 0 7px 0 0;
-    }
-
-    .all_func .row1,
-    .all_func .row2,
-    .all_func .row3 {
-        width: 150px;
-    }
-
-    .all_func .row_func,
-    .table_section .row .tittle_clm {
-        width: 350px;
-    }
-*/
     .table_section {
         margin: 0 auto;
         max-width: 800px;
@@ -678,6 +586,9 @@ header {
         padding: 30px 25px;
         justify-content: flex-start;
     }
+    .sliderMem .item div {
+    width: 93%;
+}
 
     .sliderMem .item h1 {
         padding: 0;

@@ -10,64 +10,105 @@
     <link rel="stylesheet" href="style/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl.theme.default.css">
 
+    <link rel="stylesheet" href="style/lightpick.css">
+
     <link rel="stylesheet" href="style/header_footer.css">
     <link rel="stylesheet" href="style/animation.css">
     <link rel="stylesheet" href="style/search_result_style.css">
-
 
 </head>
 
 <body>
     <header id="header">
-        <a href="index.html"><img class="logo menu_desctop " alt="yonda" src="img/Yonda_POS_black.svg"></a>
-        <ul class="menu_desctop">
-            <li><a href="" class="menu_item">Go Deals</a></li>
-            <li><a href="search_result.html" class="menu_item">Destinations</a></li>
-            <li><a href="" class="menu_item">Spotlight</a></li>
-            <li><a href="" class="menu_item">Subscriptions</a></li>
-            <li><a href="" class="menu_item">Login</a></li>
+        <div class="container_box">
+            <a href="index.html"><img class="logo menu_desctop " alt="yonda" src="img/Yonda_POS_black.svg"></a>
+            <ul class="menu_desctop">
+                <li><a href="" class="menu_item">Go Deals</a></li>
+                <li><a href="search_result.html" class="menu_item">Destinations</a></li>
+                <li><a href="" class="menu_item">Spotlight</a></li>
+                <li><a href="" class="menu_item">Subscriptions</a></li>
+                <li><a href="" class="menu_item">Login</a></li>
 
-            <li class="singIn_btn"><a href="" class="transp_btn">Join</a></li>
-        </ul>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a href="index.html"><img class="logo" alt="yonda" src="img/Yonda_POS_black.svg"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li><a href="" class="menu_item">Go Deals</a></li>
-                    <li><a href="search_result.html" class="menu_item">Destinations</a></li>
-                    <li><a href="" class="menu_item">Spotlight</a></li>
-                    <li><a href="" class="menu_item">Subscriptions</a></li>
-                    <li><a href="" class="menu_item">Login</a></li>
+                <li class="singIn_btn"><a href="" class="transp_btn">Join</a></li>
+            </ul>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="index.html"><img class="logo" alt="yonda" src="img/Yonda_POS_black.svg"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li><a href="" class="menu_item">Go Deals</a></li>
+                        <li><a href="search_result.html" class="menu_item">Destinations</a></li>
+                        <li><a href="" class="menu_item">Spotlight</a></li>
+                        <li><a href="" class="menu_item">Subscriptions</a></li>
+                        <li><a href="" class="menu_item">Login</a></li>
 
-                    <li class="singIn_btn"><a href="" class="transp_btn">Join</a></li>
-                </ul>
-            </div>
-        </nav>
+                        <li class="singIn_btn"><a href="" class="transp_btn">Join</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <section class="section1">
         <div class="container_box">
-            <p class="text">Showing you deals to...</p>
+            <p class="text_mob">Showing you deals to...</p>
             <form>
                 <div>
                     <label>Destination <img alt="" src="img/arrow_down.png"></label>
-                    <input type="text" placeholder="Hawaii, USA">
+                    <input type="text" placeholder="Hawaii, USA" class="input_box">
                 </div>
                 <div>
                     <label>Location <img alt="" src="img/arrow_down.png"></label>
-                    <input type="text" placeholder="Anywhere">
+                    <input type="text" placeholder="Anywhere" class="input_box">
                 </div>
                 <div>
                     <label>Dates <img alt="" src="img/arrow_down.png"></label>
-                    <input type="text" placeholder="Anytime">
+                    <input type="text" id="demo-2" class="form-control form-control-sm input_box" />
                 </div>
                 <div>
                     <label>For <img alt="" src="img/arrow_down.png"></label>
-                    <input type="text" placeholder="4 nights (2 people)">
+                    <div class="dropdown">
+                        <div class="select dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p id="res" class="input_box"></p>
+                        </div>
+                        <div class="dropdown-menu guest" aria-labelledby="dropdownMenuButton" onClick="event.stopPropagation();">
+                            <p>Room1</p>
+
+                            <form class="inputs">
+                                <div class="count">
+                                    <p class="text">Adults</p>
+                                    <div class="number">
+                                        <span class="minus">-</span>
+                                        <input type="text" value="1" id="adult" />
+                                        <span class="plus">+</span>
+                                    </div>
+                                </div>
+                                <div class="count">
+                                    <p class="text">Children (Age 0-17)</p>
+                                    <div class="number">
+                                        <span class="minus">-</span>
+                                        <input type="text" value="1" id="child" />
+                                        <span class="plus_child">+</span>
+                                    </div>
+                                </div>
+                                <div class="count">
+                                    <p class="text">Child 1</p>
+                                    <select class="age">
+                                        <option> 1 year old</option>
+                                        <option> 2 years old</option>
+                                        <option> 3 years old</option>
+                                    </select>
+                                </div>
+                            </form>
+                            <div class="add">
+                                <p>Add another room</p>
+                                <a class="black_btn">Apply</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </form>
             <a href class="purple_btn btn">GO</a>
@@ -112,6 +153,7 @@
                     <div class="img"></div>
                     <div class="img"></div>
                 </div>
+
                 <div class="middle">
                     <div class="multi-range-slider">
                         <input type="range" id="input-left" min="0" max="100" value="38">
@@ -141,11 +183,11 @@
                         <input type="range" id="input-left2" min="0" max="100" value="48">
                         <input type="range" id="input-right2" min="0" max="100" value="75">
 
-                        <div class="slider2">
+                        <div class="slider4">
                             <div class="track"></div>
-                            <div class="range"></div>
-                            <div class="thumb left"></div>
-                            <div class="thumb right"></div>
+                            <div class="range" style="left: 49%; right: 26%;"></div>
+                            <div class="thumb left" style="left: 49%;"></div>
+                            <div class="thumb right" style="right: 26%;"></div>
                         </div>
                     </div>
                 </div>
@@ -232,9 +274,9 @@
             <div class="result_slider">
                 <p class="text">We have <span style="color: #883ff4">24</span> holiday matching deals</p>
 
-                <div class="slider_hotel">
+                <div class="owl-carousel slider_hotel" id="sliderBook">
 
-                    <div class="slide active">
+                    <div class="slide">
                         <div class="item">
                             <div class="img_block">
                                 <div class="visible">
@@ -654,22 +696,57 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="item">
+                            <div class="img_block">
+                                <div class="visible">
+                                    <p class="white_text">50% OFF</p>
+                                    <!--                                    <img alt="" src="img/hotel1.png" class="bg_img">-->
+                                    <div class="stars">
+                                        <img alt="" src="img/star.png">
+                                        <img alt="" src="img/star.png">
+                                        <img alt="" src="img/star.png">
+                                        <img alt="" src="img/star.png">
+                                        <img alt="" src="img/star.png" style="filter: grayscale(1)">
+                                    </div>
+                                </div>
+                                <div class="unvisible">
+                                    <p class="title">About</p>
+                                    One Bedroom Apartment
+                                    <div class="quick_info">
+                                        <div>
+                                            <p class="info"><img alt="" src="img/night_icon.png" class="night_icon"> 4 nights</p>
+                                            <p class="info"><img alt="" src="img/bed_icon.png" class="bed_icon"> 1 Bed</p>
+                                        </div>
+                                        <div>
+                                            <p class="info"><img alt="" src="img/user_icon.png" class="user_icon"> Sleeps 3</p>
+
+                                            <p class="info"><img alt="" src="img/wifi_icon.png" class="wifi_icon"> Free Wi-Fi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="right">
+                                <h5>Bali, Indonesia</h5>
+                                <h1>The Mulia Nusa Dua</h1>
+                                <div class="box">
+                                    <p class="purple"><span style="text-decoration: line-through;">$320 RRP</span> <br>$160 per night</p>
+                                    <p class="purple"><span>Over your 4 night stay </span><br>You’ll save $640.00</p>
+                                </div>
+                                <div class="price_box">
+                                    <div>
+                                        <p>$640</p>
+                                        <span>4 nights <br>For 2 people</span>
+                                    </div>
+                                    <a href class="purple_btn btn">GO</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-
                 </div>
-                <nav class="slider-nav">
-                    <ul>
-                        <li class="arrow arrowPrew">
-                            <a class="previous previousDefoult"></a>
-                        </li>
+                <div id="info" class="num">Page 1 (of 2)</div>
 
-                        <li class="arrow arrowNext">
-                            <a class="next"></a>
-                        </li>
-                        <p class="num"></p>
-                    </ul>
-                </nav>
             </div>
         </div>
     </section>
@@ -711,72 +788,158 @@
         </div>
     </section>
     <footer>
-        <div class="row">
-            <a href="index.html"><img class="logo" alt="yonda" src="img/Yonda_POS_black.svg"></a>
-        </div>
-        <div class="row">
-            <div class="left">
-                <div class="column">
-                    <a href="">Privacy Policy</a>
-                    <a href="">Terms & Conditions</a>
-                    <a href="">Data Collection & Usage</a>
-                    <a href="">Legal Notices</a>
+        <div class="container_box">
+            <div class="row">
+                <a href="index.html"><img class="logo" alt="yonda" src="img/Yonda_POS_black.svg"></a>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <div class="column">
+                        <a href="">Privacy Policy</a>
+                        <a href="">Terms & Conditions</a>
+                        <a href="">Data Collection & Usage</a>
+                        <a href="">Legal Notices</a>
+                    </div>
+                    <div class="column">
+                        <a href="">Corporate information</a>
+                        <a href="">About Yonda</a>
+                        <a href="">Jobs</a>
+                        <a href="">Media</a>
+                    </div>
+                    <div class="column">
+                        <a href="">Acount Help</a>
+                        <a href="">Contact Us</a>
+                        <div class="social">
+                            <a href="" class="face"></a>
+                            <a href="" class="inst"></a>
+                            <a href="" class="pint"></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="column">
-                    <a href="">Corporate information</a>
-                    <a href="">About Yonda</a>
-                    <a href="">Jobs</a>
-                    <a href="">Media</a>
-                </div>
-                <div class="column">
-                    <a href="">Acount Help</a>
-                    <a href="">Contact Us</a>
-                    <div class="social">
-                        <a href="" class="face"></a>
-                        <a href="" class="inst"></a>
-                        <a href="" class="pint"></a>
+                <div class="right">
+                    <div class="column">
+                        <a href="" class="app"><img src="img/app.png" alt=""></a>
+                        <p>Yonda App coming soon.</p>
+                        <a href="">What to be notified?</a>
                     </div>
                 </div>
             </div>
-            <div class="right">
-                <div class="column">
-                    <a href="" class="app"><img src="img/app.png" alt=""></a>
-                    <p>Yonda App coming soon.</p>
-                    <a href="">What to be notified?</a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="bottom">
-                <p class="text">Powered by Australia’s favourite travel companions</p>
-                <div class="img_box">
-                    <img class="icon1" alt="" src="img/jetstar_w.png">
-                    <img class="icon2" alt="" src="img/icon2.png">
-                    <img class="icon3" alt="" src="img/icon3.png">
-                    <img class="icon4" alt="" src="img/icon4F.png">
-                    <img class="icon5" alt="" src="img/icon5F.png">
+            <div class="row">
+                <div class="bottom">
+                    <p class="text">Powered by Australia’s favourite travel companions</p>
+                    <div class="img_box">
+                        <img class="icon1" alt="" src="img/jetstar_w.png">
+                        <img class="icon2" alt="" src="img/icon2.png">
+                        <img class="icon3" alt="" src="img/icon3.png">
+                        <img class="icon4" alt="" src="img/icon4F.png">
+                        <img class="icon5" alt="" src="img/icon5F.png">
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
 
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="script/jquery.min.js"></script>
 
     <script src="script/runge.js"></script>
-    <script src="script/slider.js"></script>
     <script src="script/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="lightpick.js"></script>
     <script>
-        var items = document.querySelectorAll('.slide');
-        //        const itemCount = items.length;
-        var a = 1;
-        var number = document.querySelector('.num');
-        number.innerHTML = 'Page ' + a + ' ( of ' + items.length + ' )';
+        if ($(window).width() >= 801) {
+            var picker = new Lightpick({
+                field: document.getElementById('demo-2'),
+                singleDate: false,
+                onSelect: function(start, end) {
+                    var str = '';
+                    str += start ? start.format('Do MMMM YYYY') + ' to ' : '';
+                    str += end ? end.format('Do MMMM YYYY') : '...';
+                },
+                firstDay: 7,
+                selectForward: true,
+                footer: true,
+                numberOfMonths: 2,
+                locale: {
+                    buttons: {
+                        prev: ' ',
+                        next: ' ',
+                        apply: 'Apply'
+                    },
+                },
+                lang: 'en',
+                autoclose: false,
 
+            });
+        } else {
+            var picker = new Lightpick({
+                field: document.getElementById('demo-2'),
+                singleDate: false,
+                onSelect: function(start, end) {
+                    var str = '';
+                    str += start ? start.format('Do MMMM YYYY') + ' to ' : '';
+                    str += end ? end.format('Do MMMM YYYY') : '...';
+                },
+                firstDay: 7,
+                selectForward: true,
+                footer: true,
+                numberOfMonths: 1,
+                locale: {
+                    buttons: {
+                        prev: ' ',
+                        next: ' ',
+                        apply: 'Apply'
+                    },
+
+                },
+                lang: 'en',
+                autoclose: false,
+
+            });
+        }
+
+    </script>
+    <script>
+        $(".black_btn").click(function() {
+            var myP = document.getElementById("res");
+            var adult = document.getElementById("adult").value;
+            var child = document.getElementById("child").value;
+            var count = 0;
+            count = Number(adult) + Number(child);
+            myP.innerHTML = "Room1, " + count + " guests";
+            jQuery.noConflict();
+            $(this).parents('.dropdown-menu').toggleClass('show');
+        })
+
+    </script>
+
+    <script src="script/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#sliderBook').owlCarousel({
+                loop: true,
+                nav: false,
+                dots: true,
+                touchDrag: true,
+                responsiveClass: true,
+                center: true,
+                slideBy: 1,
+                transitions: '1s',
+                items: 1,
+
+            });
+
+            $('.owl-carousel').on('changed.owl.carousel', function(e) {
+                if (!e.namespace || e.property.name != 'position') return
+                var n = e.item.index - 1;
+                $('#info').text("Page " + n + ' (of ' + e.item.count + ")");
+            })
+
+        });
 
     </script>
 </body>

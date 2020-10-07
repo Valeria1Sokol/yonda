@@ -38,14 +38,15 @@
     color: white;
     cursor: pointer;
 }
-.sliderMem .find_btn:hover{
+
+.sliderMem .find_btn:hover {
     border: 2px solid white;
-     color: white;
+    color: white;
 }
 
 .sliderMem .item div {
     padding: 55px 0 55px 55px;
-    width: 58%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -59,7 +60,7 @@
 }
 
 .sliderMem img {
-    width: 255px;
+    width: 245px;
 }
 
 .sliderMem .owl-carousel .owl-dots {
@@ -165,6 +166,18 @@
         z-index: 0;
         right: 0;
     }
+
+    .sliderMem .owl-carousel .owl-item img {
+        display: none;
+    }
+
+    .owl-nav {
+        width: auto;
+    }
+
+    .sliderMem .owl-carousel .owl-dots {
+        width: 42%;
+    }
 }
 
 @media all and (max-width:800px) {
@@ -211,11 +224,36 @@
     .sliderMem .owl-carousel {
         margin-top: 55px;
     }
+    .sliderMem .item div {
+        width: 68%;
+    }
 
+}
+
+@media all and (max-width:500px) {
+    .sliderMem .item div {
+        width: 84%;
+    }
+}
+@media all and (max-width:425px)
+{
+    .sliderMem .item div {
+    width: 100%;
+}
 }
 
 @media all and (max-width:375px) {
     .sliderMem .item h1 {
         width: 100%;
     }
+}
+
+@media all and (max-width:320px) {
+    .section1 br
+    {
+        display: none;
+    }
+    .sliderMem .item {
+    padding: 0 0 0 0 !important;
+}
 }
