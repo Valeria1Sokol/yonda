@@ -1112,6 +1112,10 @@ footer .container_box {
 }
 
 @media all and (max-width:800px) {
+    header {
+        /*    position: relative;*/
+    }
+
     .section1 {
         padding: 186px 0 65px;
     }
@@ -1466,7 +1470,7 @@ footer .container_box {
 @media all and (max-width:425px) {
 
     .section1 .guest {
-        /*        left: -1vw !important;*/
+        transform: translate3d(-101px, 58px, 0px) !important;
     }
 
     .section3 .item {
