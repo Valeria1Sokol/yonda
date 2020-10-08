@@ -1434,6 +1434,10 @@ footer .container_box {
 
 @media all and (max-width:500px) {
     .section1 .guest {
+        transform: translate3d(-101px, 58px, 0px) !important;
+    }
+
+    .section1 .guest {
         left: -50% !important;
     }
 
@@ -1469,9 +1473,7 @@ footer .container_box {
 
 @media all and (max-width:425px) {
 
-    .section1 .guest {
-        transform: translate3d(-101px, 58px, 0px) !important;
-    }
+
 
     .section3 .item {
         width: 100%;
@@ -1523,6 +1525,15 @@ footer .container_box {
 
     .section1 form .input_box {
         /*        border-right: none;*/
+    }
+
+    .section1 .guest {
+        transform: translate3d(-150px, 58px, 0px) !important;
+        left: 0% !important;
+    }
+
+    .section1 .guest .age {
+        width: 181px;
     }
 
     .lightpick {
