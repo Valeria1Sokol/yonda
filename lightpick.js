@@ -1042,7 +1042,7 @@
 
             if (orientation[0] == 'auto' || !(/top|bottom/.test(orientation[0]))) {
                 if (rect.bottom + calRect.height > window.innerHeight && window.pageYOffset > calRect.height) {
-                    top = (rect.top + window.pageYOffset) - calRect.height;
+                    top = (rect.top + window.pageYOffset) - calRect.height - 40;
                 }
                 else {
                     top = rect.bottom + window.pageYOffset;

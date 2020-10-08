@@ -550,8 +550,8 @@ header {
 }
 
 .search_section .guest .count:nth-of-type(3) {
-    padding-left: 27px;
-    width: 16.5vw;
+    width: 100%;
+    justify-content: flex-start;
     margin-top: 5px;
 }
 
@@ -574,6 +574,7 @@ header {
     font-size: 14px;
     letter-spacing: -1px;
     cursor: pointer;
+    margin: 0 0 0 38px;
 }
 
 .search_section .guest .add {
@@ -1232,7 +1233,7 @@ header {
     align-items: center;
 }
 
-@media all and (max-width:1440px) {}
+
 
 @media all and (max-width:1280px) {
 
@@ -1266,9 +1267,6 @@ header {
         width: 59.5vw;
     }
 
-    .search_section .guest .count:nth-of-type(3) {
-        width: 31.5vw;
-    }
 
     .search_section .result_box .box {
         width: 100%;
