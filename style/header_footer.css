@@ -77,7 +77,7 @@ header .container_box
 
 .menu_desctop a {
     color: #8739f6;
-    font-size: 12px;
+    font-size: 16px;
     text-decoration: none;
     cursor: pointer;
     position: relative;
@@ -230,9 +230,12 @@ footer .bottom {
 
 footer .img_box {
     width: 585px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+footer .img_box img {
+    margin: 0px 10px;
 }
 
 footer .social {
@@ -243,7 +246,7 @@ footer .social {
 }
 
 footer .social a {
-    background-image: url(../img/social.png);
+    background-image: url(/img/social.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 33px;

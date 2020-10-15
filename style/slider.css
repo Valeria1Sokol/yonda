@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: flex-end;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-    background-image: url(../img/slider_bg.png);
+    background-image: url(/img/slider_bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,7 +122,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 67px 0 0;
-    background-image: url(../img/arrow.png);
+    background-image: url(/img/arrow.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16%;

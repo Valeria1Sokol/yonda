@@ -32,7 +32,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 9.8vw 0 11.6vw;
-    background-image: url(../img/palm.png);
+    background-image: url(/img/palm.png);
     background-position: 100% 48%;
     background-repeat: no-repeat;
     background-size: auto;

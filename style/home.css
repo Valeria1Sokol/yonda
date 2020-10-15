@@ -12,9 +12,8 @@ p {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 300;
-    line-height: 58px;
     margin: 15px 0 0;
     overflow: hidden;
     cursor: default;
@@ -29,7 +28,7 @@ h1 {
     width: 100vw;
     display: flex;
     justify-content: center;
-    background-image: url(../img/section1_bg.png);
+    background-image: url(/img/section1_bg.png);
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,7 +63,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/section2_bg.png);
+    background-image: url(/img/section2_bg.png);
     background-position: 100% 96%;
     background-repeat: no-repeat;
     background-size: 45%;
@@ -165,10 +164,13 @@ h1 {
 
 .section2 .bottom .img_box {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 65%;
     margin-top: 14px;
+}
+
+.section2 .bottom .img_box img {
+    margin: 10px;
 }
 
 .section2 .icon1 {
@@ -304,7 +306,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/section3_bg.png);
+    background-image: url(/img/section3_bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -440,6 +442,9 @@ h1 {
     font-size: 14px;
     color: #b3b3b3;
     font-weight: 300;
+    float: right;
+    padding: 0px 6px;
+    line-height: initial;
 }
 
 .slider_tree .details {
@@ -782,15 +787,6 @@ h1 {
 
 @media all and (max-width:1600px) {
 
-    /*
-    .section6 {
-        padding: 9.8vw 0 13.5vw;
-    }
-
-    .section6 .container_box {
-        max-width: 1500px;
-    }
-*/
     .section6 .container_box {
         max-width: 1400px;
     }
@@ -799,27 +795,6 @@ h1 {
 
 
 @media all and (max-width:1440px) {
-
-    /*
-    .section4 .container_box,
-    .section5 .container_box {
-        max-width: 1200px;
-    }
-
-    .section4 .left .text:first-of-type {
-        width: 100%;
-    }
-
-    .section4 .right .text {
-        width: 68%;
-    }
-
-    .section5 .left {
-        width: 36%;
-    }
-
-   
-*/
 
     .section6 .container_box {
         max-width: 1319px;
@@ -910,7 +885,7 @@ h1 {
     }
 
     .section1 {
-        background-image: url(../img/section1_bg_mob.png);
+        background-image: url(/img/section1_bg_mob.png);
         padding: 170px 0 308px;
     }
 

@@ -127,7 +127,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    background-image: url(../img/arrow.png);
+    background-image: url(/img/arrow.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16%;
@@ -239,7 +239,7 @@
     border-bottom-left-radius: 50%;
     background-color: #ad4bfc;
 
-    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%238739f6' cx='16' cy='16' r='16'/%3E%3C/svg%3E);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%238739f6' cx='16' cy='16' r='16'/%3E%3C/svg%3E");
 }
 
 .lightpick__day.is-end-date.is-in-range,

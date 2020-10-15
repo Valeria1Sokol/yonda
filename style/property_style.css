@@ -11,7 +11,6 @@ p {
 }
 
 h1 {
-    font-size: 48px;
     font-weight: 300;
     line-height: 58px;
     margin: 15px 0 0;
@@ -19,7 +18,7 @@ h1 {
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
 }
 
@@ -165,7 +164,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/arrow.png);
+    background-image: url(/img/arrow.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16%;
@@ -192,11 +191,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/palm.png);
+    background-image: url(/img/palm.png);
     background-position: 104% 57%;
     background-repeat: no-repeat;
     background-size: 40%;
-    padding: 98px 0 118px;
+    padding: 68px 0 48px;
 }
 
 .info_section .content_box {
@@ -213,6 +212,7 @@ header {
     flex-direction: column;
     color: black;
     line-height: 1.2;
+    width: 100%;
 }
 
 .info_section .left h3 {
@@ -220,8 +220,8 @@ header {
 }
 
 .info_section .left .name_apart {
-    font-size: 50px;
-    font-weight: 300;
+    font-size: 40px;
+    font-weight: 500;
 
 }
 
@@ -313,8 +313,9 @@ header {
     border: 1px solid #cccdcf;
     width: 170px;
     height: 170px;
-    background-position: center;
-    background-image: url(../img/expert_img.png);
+    background-color: #eaeaec;
+    background-size: contain;
+    background-image: url(/img/Yasmin-Yonda.png);
     background-repeat: no-repeat;
     margin: 20px 0 30px;
 }
@@ -416,7 +417,7 @@ header {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    background-image: url(../img/arrow_down.png);
+    background-image: url(/img/arrow_down.png);
     background-position: 93% center;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -441,7 +442,7 @@ header {
 }
 
 .res_cont span {
-    background-image: url(../img/arrow_left.png);
+    background-image: url(/img/arrow_left.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -461,7 +462,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-image: url(../img/arrow_down.png);
+    background-image: url(/img/arrow_down.png);
     background-position: 93% center;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -562,7 +563,7 @@ header {
     border-radius: 6px;
     padding: 0 10px;
     background-color: white;
-    background-image: url(../img/arrow_down.png);
+    background-image: url(/img/arrow_down.png);
     background-position: 93% center;
     background-repeat: no-repeat;
     /*    background-size: 4%;*/
@@ -702,7 +703,6 @@ header {
     justify-content: flex-start;
     align-items: flex-end;
     position: relative;
-    margin: 0 0 83px;
 }
 
 .serch_res .left .img img {
@@ -810,7 +810,6 @@ header {
     justify-content: flex-start;
     align-items: flex-start;
     letter-spacing: 0px;
-    width: 500px;
 }
 
 .serch_res .right .box {
@@ -838,6 +837,7 @@ header {
 
 .serch_res .right h1 {
     font-weight: 400;
+    font-size: 2.5em;
     margin: 15px 0 32px;
 }
 
@@ -871,6 +871,10 @@ header {
     align-items: center;
     flex-wrap: wrap;
     width: 71%;
+}
+
+.quick_info li {
+    width: 200px;
 }
 
 .quick_info .info {
@@ -1007,7 +1011,7 @@ header {
 }
 
 .section4 .quick_info {
-    width: 40%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1191,7 +1195,7 @@ header {
     align-items: center;
     color: black;
     padding: 42px 0;
-    background-image: url(../img/section5_bg.png);
+    background-image: url(/img/section5_bg.png);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1360,7 +1364,7 @@ header {
 
     .info_section .info {
         font-size: 12px;
-        width: 80%;
+        width: 100%;
     }
 
     .info_section .purple_btn {
