@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YONDA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/owl.carousel.min.css">
+    <link rel="stylesheet" href="/style/owl.theme.default.css">
+
+    <link rel="stylesheet" href="/style/lightpick.css">
+
+
+    <link rel="stylesheet" href="/style/header_footer.css">
+    <link rel="stylesheet" href="/style/animation.css">
+    <link rel="stylesheet" href="/style/property_style.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="container_box">
+            <a href="index.html"><img class="logo menu_desctop " alt="yonda" src="/img/Yonda_POS_black.svg"></a>
+            <ul class="menu_desctop">
+                <li><a href="" class="menu_item">Go Deals</a></li>
+                <li><a href="search_result.html" class="menu_item">Destinations</a></li>
+                <li><a href="" class="menu_item">Spotlight</a></li>
+                <li><a href="" class="menu_item">Subscriptions</a></li>
+                <li><a href="" class="menu_item">Login</a></li>
+
+                <li class="singIn_btn"><a href="" class="transp_btn">Join</a></li>
+            </ul>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="index.html"><img class="logo" alt="yonda" src="/img/Yonda_POS_black.svg"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li><a href="" class="menu_item">Go Deals</a></li>
+                        <li><a href="search_result.html" class="menu_item">Destinations</a></li>
+                        <li><a href="" class="menu_item">Spotlight</a></li>
+                        <li><a href="" class="menu_item">Subscriptions</a></li>
+                        <li><a href="" class="menu_item">Login</a></li>
+
+                        <li class="singIn_btn"><a href="" class="transp_btn">Join</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="full_page_slider">
+        <div class="owl-carousel" id="sliderFool">
+            <div class="item">
+                <img class="name" alt="" src="/img/name_hotel.png">
+                <img class="img" alt="" src="/img/hotel.png">
+            </div>
+            <div class="item">
+                <img class="name" alt="" src="/img/name_hotel.png">
+                <img class="img" alt="" src="/img/hotel.png">
+            </div>
+            <div class="item">
+                <img class="name" alt="" src="/img/name_hotel.png">
+                <img class="img" alt="" src="/img/hotel.png">
+            </div>
+        </div>
+    </section>
+    <section class="info_section">
+        <div class="content_box">
+
+            <div class="left">
+                <h3>Noosa, Sunshine Coast</h3>
+                <p class="name_apart">Peppers Noosa Resort & Spa</p>
+                <div class="stars">
+                    <img alt="" src="/img/star.png">
+                    <img alt="" src="/img/star.png">
+                    <img alt="" src="/img/star.png">
+                    <img alt="" src="/img/star.png">
+                    <img alt="" src="/img/star.png" style="filter: grayscale(1)">
+                </div>
+                <div class="info">
+                    <p>Available up until <br><span>31 Jul 2021</span> <img alt="" src="/img/info.png"> </p>
+                    <p><a href="" class="purple_btn btn">Add to Watch List</a></p>
+                </div>
+            </div>
+            <div class="right">
+                <p class="title">Meet our Expert</p>
+                <div class="expert"></div>
+                <p>Hi, I'm Yasmin.</p>
+                <p>If you have any questions about this location or deals on offer, feel free to ask me.</p>
+
+                <p class="adress">1800 096 632</p>
+
+            </div>
+        </div>
+    </section>
+    <section class="search_section">
+        <div class="container_box">
+            <form action="" method="post">
+                <div class="form">
+
+                    <div class="d-flex">
+                        <div class="clm">
+                            <label><img alt="" src="/img/calendar.png">Check-In</label>
+                            <input type="text" id="demo-3_1" class="form-control form-control-sm" placeholder="From the" />
+                        </div>
+                        <div class="clm">
+                            <label><img alt="" src="/img/calendar.png">Check-Out</label>
+                            <input type="text" id="demo-3_2" class="form-control form-control-sm" placeholder="To the" />
+                        </div>
+                    </div>
+                    <div class="clm">
+                        <label><img alt="" src="/img/user_icon.png">Guests</label>
+
+                        <div class="dropdown">
+                            <div class="select dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <p id="res"></p>
+                            </div>
+                            <div class="dropdown-menu guest" aria-labelledby="dropdownMenuButton" onClick="event.stopPropagation();">
+                                <p>Room1</p>
+
+                                <div class="inputs">
+                                    <div class="count">
+                                        <p class="text">Adults</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1" id="adult" />
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="count">
+                                        <p class="text">Children (Age 0-17)</p>
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="0" id="child" />
+                                            <span class="plus_child">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="count">
+                                        <p class="text">Child 1</p>
+                                        <select class="age">
+                                            <option> 1 year old</option>
+                                            <option> 2 years old</option>
+                                            <option> 3 years old</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="add">
+                                    <p>Add another room</p>
+                                    <a class="black_btn">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="purple_btn btn">GO</button>
+
+
+                </div>
+            </form>
+            <br><br>
+            <div class="serch_res">
+                <div class="left">
+                    <div class="img"> <img alt="" src="/img/view.png">
+                        <p class="white_text">10% OFF</p>
+                    </div>
+                    <div class="btn_box">
+                        <a href class="black_btn">Room Photos (4)</a>
+                        <a href class="white_btn">Inclusions <img alt="" src="/img/arrow_down.png"></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="box">
+                        <h3>4 nights (2 people)</h3>
+                        <p><span>Deal ID 3440</span></p>
+                    </div>
+                    <h1>One Bedroom Apartment</h1>
+                    <div class="box">
+                        <p class="purple"><span style="text-decoration: line-through;">$320 RRP</span> <br>$160 per night</p>
+                        <p class="purple"><span>Over your 4 night stay </span><br>You’ll save $640.00</p>
+                    </div>
+                    <p class="title">Quick Info</p>
+                    <div class="quick_info">
+                        <div>
+                            <p class="info"><img alt="" src="/img/night_icon.png" class="night_icon"> 4 nights</p>
+                            <p class="info"><img alt="" src="/img/bed_icon.png" class="bed_icon"> 1 Bed</p>
+                        </div>
+                        <div>
+                            <p class="info"><img alt="" src="/img/user_icon.png" class="user_icon"> Sleeps 3</p>
+
+                            <p class="info"><img alt="" src="/img/wifi_icon.png" class="wifi_icon"> Free Wi-Fi</p>
+                        </div>
+                    </div>
+                    <div class="price_box">
+                        <div>
+                            <p>$640</p>
+                            <span>4 nights <br>For 2 people</span>
+                        </div>
+                        <a href class="purple_btn btn">Make Booking</a>
+                    </div>
+                </div>
+            </div>
+            <div class="serch_res">
+                <div class="left">
+                    <div class="img"> <img alt="" src="/img/view.png">
+                        <p class="black_text">FLASH OFFER <span>10 : 20 : 36</span></p>
+                        <p class="white_text">10% OFF</p>
+                    </div>
+                    <div class="btn_box">
+                        <a href class="black_btn">Room Photos (4)</a>
+                        <a href class="white_btn">Inclusions <img alt="" src="/img/arrow_down.png"></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="box">
+                        <h3>4 nights (2 people)</h3>
+                        <p><span>Deal ID 3440</span></p>
+                    </div>
+                    <h1>Two Bedroom Apartment</h1>
+                    <div class="box">
+                        <p class="purple"><span style="text-decoration: line-through;">$320 RRP</span> <br>$160 per night</p>
+                        <p class="purple"><span>Over your 4 night stay </span><br>You’ll save $640.00</p>
+                    </div>
+                    <p class="title">Quick Info</p>
+                    <div class="quick_info">
+                        <div>
+                            <p class="info"><img alt="" src="/img/night_icon.png" class="night_icon"> 4 nights</p>
+                            <p class="info"><img alt="" src="/img/bed_icon.png" class="bed_icon"> 1 Bed</p>
+                        </div>
+                        <div>
+                            <p class="info"><img alt="" src="/img/user_icon.png" class="user_icon"> Sleeps 3</p>
+
+                            <p class="info"><img alt="" src="/img/wifi_icon.png" class="wifi_icon"> Free Wi-Fi</p>
+                        </div>
+                    </div>
+                    <div class="price_box">
+                        <div>
+                            <p>$640</p>
+                            <span>4 nights <br>For 2 people</span>
+                        </div>
+                        <a href class="purple_btn btn">Make Booking</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section4">
+        <div class="container_box">
+            <div class="top">
+                <div class="left_box">
+                    <div class="accordion" id="accordionExample">
+                    </div>
+                    <div class="accordion">
+                        <div class="card">
+                            <div class="title" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Quick Info
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul class="quick_info">
+                                        <li class="info"><img alt="" src="/img/air_icon.png" class="air_icon"> Air Con</li>
+                                        <li class="info"><img alt="" src="/img/palm_icon.png" class="palm_icon"> Beachfront</li>
+                                        <li class="info"><img alt="" src="/img/pool_icon.png" class="pool_icon"> Pool</li>
+                                        <li class="info"><img alt="" src="/img/wifi_icon.png" class="wifi_icon"> Free Wi-Fi</li>
+                                        <li class="info"><img alt="" src="/img/pool_icon.png" class="pool_icon"> Pool</li>
+                                        <li class="info"><img alt="" src="/img/wifi_icon.png" class="wifi_icon"> Free Wi-Fi</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="card">
+                            <div class="title" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                About
+                            </div>
+                            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="text">Seminyak is Bali’s upmarket, fashion, dining and accommodation precinct, set along a stunning stretch of golden sand beach. The Mulia Nusa Dua, a sanctuary tucked away on a quiet street in Seminyak, yet within walking distance to the best shopping, restaurants, bars and beaches. Relax on a lounge chair by the pool or adventure to your heart's content.</p>
+
+                                    <p class="bold_text text">
+                                        This stay comes with several Yonda Exclusive all-inclusive packages designed to make your next Bali holiday unforgettable.</p>
+                                    <div class="btn_box">
+                                        <a href class="black_btn">View Packages</a>
+                                        <a href class="white_btn">Travelling in a Group?</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="card">
+                            <div class="title" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                Room Features
+                            </div>
+                            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="text">Lorem ipsum dolor sit amet.<br>
+                                        Consectetur adipiscing elit.<br>
+                                        Curabitur sed elit pharetra, ullamcorper metus sit amet, vehicula tortor.<br>
+                                        Nulla arcu diam, malesuada in bibendum ut, consectetur ut enim. Suspendisse a tincidunt est.<br>
+                                        Duis ac posuere augue. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="right_box">
+                    <div class="accordion">
+                        <div class="card">
+                            <div class="title" id="headingSix" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">Image Gallery</div>
+                            <div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="img_box">
+                                        <div class="img"></div>
+                                        <div class="img"></div>
+                                        <div class="img"></div>
+                                        <div class="img"></div>
+                                        <div class="img"></div>
+                                        <div class="img"></div>
+                                    </div>
+                                    <a class="view" href>View All (24)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="card">
+                            <div class="title" id="headingSeven" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">Location</div>
+                            <div id="collapseSeven" class="collapse show" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="map">
+                                        <img alt="maps" src="/img/Map.png">
+                                    </div>
+                                    <a class="view" href>View Map</a>
+                                    <p class="adress">Jl. Raya Nusa Dua Selatan Kawasan <br>Sawangan Nusa Dua, <br>Benoa Bali 80363</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="clm">
+                    <div class="accordion">
+                        <div class="card">
+                            <div class="title" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                Nearby Highlights
+                            </div>
+                            <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <p class="text">Discovery Shopping Mall</p>
+                                        <span>7 min walk</span>
+                                    </div>
+                                    <div class="row">
+                                        <p class="text">Waterbom Bali</p>
+                                        <span>8 min walk</span>
+                                    </div>
+                                    <div class="row">
+                                        <p class="text">Tuban Beach</p>
+                                        <span>2 min drive</span>
+                                    </div>
+                                    <div class="row">
+                                        <p class="text">Denpasar <br>(DPS-Ngurah Rai Intl.)</p>
+                                        <span>4 min drive</span>
+                                    </div>
+                                    <div class="row">
+                                        <p class="text">Uluwatu Cliffs</p>
+                                        <span>20 min drive</span>
+                                    </div>
+                                    <div class="row">
+                                        <p class="text">Monkey Forest</p>
+                                        <span>45 min drive</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clm">
+                    <div class="accordion">
+                        <div class="card">
+                            <div class="title" id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                Please Note
+                            </div>
+                            <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <p class="text">Extra Guest Policy</p>
+                                        <span>view</span>
+                                    </div>
+                                    <div class="row">
+                                        <p class="text">Baby Policy</p>
+                                        <span>view</span>
+                                    </div>
+                                    <div class="row">
+                                        <p class="text">Cancelations</p>
+                                        <span>view</span>
+                                    </div>
+                                    <div class="row">
+                                        <p class="text">Lorem Ipsum</p>
+                                        <span>view</span>
+                                    </div>
+                                    <div class="row">
+                                        <p class="text">Lorem Ipsum</p>
+                                        <span>view</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section5">
+        <div class="container_box">
+            <div>
+                <p>All looks good?</p>
+                <h1>Let’s book your Next holiday!</h1>
+            </div>
+            <a href class="purple_btn">GO</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container_box">
+            <div class="row">
+                <a href="index.html"><img class="logo" alt="yonda" src="/img/Yonda_POS_black.svg"></a>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <div class="column">
+                        <a href="">Privacy Policy</a>
+                        <a href="">Terms & Conditions</a>
+                        <a href="">Data Collection & Usage</a>
+                        <a href="">Legal Notices</a>
+                    </div>
+                    <div class="column">
+                        <a href="">Corporate information</a>
+                        <a href="">About Yonda</a>
+                        <a href="">Careers</a>
+                        <a href="">Media</a>
+                    </div>
+                    <div class="column">
+                        <a href="">Acount Help</a>
+                        <a href="">Contact Us</a>
+                        <div class="social">
+                            <a href="" class="face"></a>
+                            <a href="" class="inst"></a>
+                            <a href="" class="pint"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="column">
+                        <a href="" class="app"><img src="/img/app.png" alt=""></a>
+                        <p>Yonda App coming soon.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="bottom">
+                    <p class="text">Powered by Australia’s favourite travel companions</p>
+                    <div class="img_box">
+                        <img class="icon1" alt="" src="/img/jetstar_w.png">
+                        <img class="icon2" alt="" src="/img/icon2.png">
+                        <img class="icon3" alt="" src="/img/icon3.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="/script/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+
+    <script src="/script/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="/script/lightpick.js"></script>
+    <script>
+        if ($(window).width() >= 801) {
+
+            var picker = new Lightpick({
+                field: document.getElementById('demo-3_1'),
+                secondField: document.getElementById('demo-3_2'),
+                firstDay: 7,
+                autoclose: false,
+                selectForward: true,
+                footer: true,
+                numberOfMonths: 2,
+                locale: {
+                    buttons: {
+                        prev: ' ',
+                        next: ' ',
+                        apply: 'Apply'
+                    },
+
+                },
+                lang: 'en',
+            });
+        } else {
+            var picker = new Lightpick({
+                field: document.getElementById('demo-3_1'),
+                secondField: document.getElementById('demo-3_2'),
+                firstDay: 7,
+                autoclose: false,
+                selectForward: true,
+                footer: true,
+                numberOfMonths: 1,
+                locale: {
+                    buttons: {
+                        prev: ' ',
+                        next: ' ',
+                        apply: 'Apply'
+                    },
+
+                },
+                lang: 'en',
+            });
+        }
+        // console.log($('#demo-3_1').offset().top);
+
+    </script>
+
+    <script src="/script/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#sliderFool').owlCarousel({
+                loop: true,
+                nav: false,
+                dots: true,
+                touchDrag: true,
+                responsiveClass: true,
+                center: true,
+                slideBy: 1,
+                transitions: '1s',
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    900: {
+                        items: 2
+                    }
+                },
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true
+            });
+
+        });
+        $(".black_btn").click(function() {
+            var myP = document.getElementById("res");
+            var adult = document.getElementById("adult").value;
+            var child = document.getElementById("child").value;
+            var count = 0;
+            var child_num = $('#child').val();
+            if (child_num > 0) {
+                child_num = 1;
+                count = Number(adult) + child_num;
+            } else {
+                count = Number(adult);
+            }
+
+            //            console.log(adult);
+            myP.innerHTML = "Room1, " + count + "guests ( " + adult + " adult +" + child_num + " child)";
+            jQuery.noConflict();
+            $(this).parents('.dropdown-menu').toggleClass('show');
+            // console.log(child_num);
+        })
+
+    </script>
+
+
+
+</body>
+
+</html>
