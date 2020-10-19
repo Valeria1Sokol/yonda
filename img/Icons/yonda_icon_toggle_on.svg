@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="22px" viewBox="0 0 44 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>toggle on</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="notifications-field" transform="translate(-461.000000, -1.000000)" fill="#9013FE">
+            <g id="noun_Toggle-On_1217305" transform="translate(461.000000, 1.000000)">
+                <path d="M10.8906,0.10937 C4.9053,0.10937 0,5.009535 0,10.99996 C0,16.99041 4.9053,21.89061 10.8906,21.89061 L33.1094,21.89061 C39.09925,21.89061 44,16.98981 44,10.99996 C44,5.010135 39.09925,0.10937 33.1094,0.10937 L10.8906,0.10937 L10.8906,0.10937 Z M33.3281,4.015635 C37.1737,4.015635 40.3281,7.149235 40.3281,10.99996 C40.3281,14.84656 37.17475,17.99996 33.3281,17.99996 C29.4773,17.99996 26.34375,14.84556 26.34375,10.99996 C26.34375,7.150235 29.47835,4.015635 33.3281,4.015635 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

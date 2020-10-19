@@ -608,6 +608,7 @@
                     },
 
                 },
+                tooltipNights: true,
                 lang: 'en',
             });
         } else {
@@ -627,6 +628,7 @@
                     },
 
                 },
+                tooltipNights: true,
                 lang: 'en',
             });
         }
@@ -674,32 +676,17 @@
             $('#slider').owlCarousel({
 
                 loop: true,
-                nav: true,
-                dots: false,
+                nav: false,
+                dots: true,
                 touchDrag: true,
                 responsiveClass: true,
                 center: true,
                 slideBy: 1,
                 transitions: '1s',
-                responsive: {
-                    0: {
-                        items: 1,
-                        stagePadding: 0,
-                    },
-                    1366: {
-                        items: 1.07,
-                        stagePadding: 0,
-                    },
-                    1201: {
-                        items: 1.07,
-                        stagePadding: 50,
-                    },
-                    1440: {
-                        items: 1.07,
-                        stagePadding: 50,
-                    },
-                },
-
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true
             });
         });
     </script>

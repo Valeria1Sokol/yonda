@@ -1,0 +1,634 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_box {
+    max-width: 1200px;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    top: 0;
+    padding: 10px 0 15px;
+}
+
+header .logo {
+    width: 114px !important;
+}
+
+header input[type="search"] {
+    background-color: #FFFFFF;
+    border: 0.5px solid #979797;
+    border-radius: 21px;
+    width: 435px;
+    height: 42px;
+    padding: 0 20px 0 43px;
+    cursor: pointer;
+    background-image: url(../img/Icons/search-interface-symbol.png);
+    background-repeat: no-repeat;
+    background-size: 3%;
+    background-position: 4% 50%;
+}
+
+header input[type="search"]:focus,
+header input[type="search"]:active {
+    outline: none;
+}
+
+.menu_desctop {
+    width: 42.6%;
+}
+
+header .singIn_btn {
+    padding: 0;
+}
+
+header .container_box .transp_btn {
+    padding: 0;
+    color: #883BF4;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 19px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 1px solid #883BF4;
+    border-radius: 16.5px;
+    width: 128px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F8FA;
+    cursor: default;
+    padding: 0 0 7vw;
+    background-image: url(../img/graphics/yonda_graphic_palm_tree.svg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section .container_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 11px 0 24px;
+}
+
+section .container_box:first-of-type {
+    align-items: center;
+}
+
+.container_box .user_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+}
+
+.container_box .user_info .user_icon {
+    width: 98px;
+    height: 98px;
+    border-radius: 50%;
+    margin: 0 12px 0 0;
+}
+
+.container_box .info p {
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    text-align: left;
+    margin: 0 0 4px;
+    font-weight: 600;
+}
+
+.container_box .info .name {
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 19px;
+    opacity: 0.706402;
+    width: 154px;
+    text-align: left;
+}
+
+.container_box .transp_btn {
+    background-color: #FFFFFF;
+    border: 2px solid #9013FE;
+    border-radius: 21px;
+    width: 147px;
+    height: 42px;
+    color: #9013FE;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.container_box .transp_btn:hover {
+    color: white;
+}
+
+.container_box .clm1 {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container_box .clm1 .box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    padding: 18px 32px;
+}
+
+.container_box .clm1 .my_info {
+    height: 489px;
+    margin: 0 0 28px;
+}
+
+.container_box .clm1 .booking_box {
+    height: 278px;
+}
+
+.container_box .clm1 .my_Subscription {
+    height: 408px;
+    margin: 0 0 18px;
+}
+
+.container_box .clm1 .baner {
+    height: 336px;
+}
+
+.container_box .clm1:last-of-type .box {
+    height: 189px;
+    margin: 0 0 24px;
+}
+
+.container_box .clm1 .help {
+    height: 145px !important;
+    margin: 0 !important;
+}
+
+.container_box .clm1 .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_box .clm1 .info_icon {
+    width: 21px;
+    margin: 0 0 0 11px;
+}
+
+.container_box .clm1 .booking_icon,
+.container_box .clm1 .notifications_icon {
+    width: 18px;
+    margin: 0 0 0 11px;
+}
+
+.container_box .clm1 .sub_icon {
+    width: 19px;
+    margin: 0 0 0 11px;
+}
+
+.container_box .clm1 .pay_icon {
+    width: 24px;
+    margin: 0 0 0 11px;
+}
+
+.container_box .clm1 .plane_icon {
+    width: 30px;
+    margin: 0 0 0 11px;
+}
+
+.container_box .clm1 .header .text {
+    color: #000000;
+    font-size: 21px;
+    letter-spacing: 0px;
+    /*    line-height: 25px;*/
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-weight: 600;
+}
+
+.container_box .clm1 .header .edit {
+    color: #9013FE;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 19px;
+    text-align: left;
+    margin: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.container_box .clm1 .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 19px 0 0;
+}
+
+.container_box .clm1 .content .tittle {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 14px;
+    opacity: 0.4993489583333333;
+    text-align: left;
+    margin: 0;
+    font-weight: 500;
+}
+
+.container_box .clm1 .content .p {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 16px;
+    letter-spacing: 0px;
+    /*    line-height: 19px;*/
+    text-align: left;
+    margin: 0 0 12px;
+}
+
+.container_box .clm1 .help .header {
+    justify-content: center;
+}
+
+.container_box .clm1 .help .content {
+    align-items: center;
+    padding: 5px 0 0;
+}
+
+.container_box .clm1 .help .tittle {
+    font-weight: 400;
+    text-align: center;
+}
+
+.container_box .clm1 .help a {
+    color: #9013FE;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    width: 172px;
+    text-align: center;
+    margin: 20px 0 0;
+    text-decoration: underline;
+}
+
+.container_box .clm1 .subscription_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0px;
+    text-align: center;
+    font-weight: 500;
+    border-bottom: 0.5px solid rgba(151, 151, 151, 0.5);
+    padding: 13px 0 4px;
+}
+
+.container_box .clm1 .subscription_box p {
+    margin: 0;
+}
+
+.container_box .clm1 .message_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 0 23px;
+}
+
+.container_box .clm1 .message_box img {
+    width: 123px;
+    height: 92px;
+}
+
+.container_box .clm1 .message_box i {
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 14px;
+    opacity: 0.596576;
+    text-align: center;
+}
+
+.container_box .clm1 .message_box p {
+    color: #6D7278;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 19px;
+    text-align: center;
+    width: 98%;
+    margin: 0;
+}
+
+.container_box .clm1 .message_box .hello_text {
+    margin: 23px 0 0;
+    font-weight: 500;
+    color: black;
+}
+
+.container_box .clm1 .message_box p span {
+    font-weight: 600;
+    color: black;
+}
+
+.container_box .clm1 .message_box .purple_btn {
+    background: #9013FE;
+    border: 2px solid #9013FE;
+    border-radius: 22.5px;
+    width: 199px;
+    height: 41px;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 42px 0 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container_box .clm1 .message_box .purple_btn:hover {
+    color: #9013FE;
+    text-decoration: none;
+}
+
+.container_box .booking_box .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container_box .booking_box .col_box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    border-top: 0.5px solid #979797;
+}
+
+.container_box .booking_box .col_box:first-of-type {
+    border: none;
+    padding: 5px 0;
+}
+
+
+.container_box .booking_box .col_box .col_text,
+.container_box .booking_box .col_box .p {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 1.4;
+    text-align: left;
+    padding: 12px 0;
+    max-width: 75px;
+    width: 100%;
+    margin: 0;
+}
+
+.container_box .booking_box .col_box .col_text {
+    max-width: 133px;
+    width: 100%;
+}
+
+.container_box .booking_box .col_box:first-of-type p {
+    opacity: 0.7987351190476191;
+    padding: 0;
+}
+
+.container_box .baner {
+    padding: 29px 33px 21px;
+    height: 100%;
+    position: relative;
+    background-image: url(../img/graphics/boy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+}
+
+.container_box .baner .content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.container_box .baner h2 {
+    width: 100%;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    opacity: 0.502058;
+    text-align: left;
+    margin: 0;
+}
+
+.container_box .baner .transp_btn {
+    background-color: #FFFFFF;
+    border: 2px solid #9013FE;
+    border-radius: 25px;
+    width: 214px;
+    height: 50px;
+    color: #9013FE;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+.container_box .baner .transp_btn:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+@media all and (max-width:1200px) {
+    .container_box {
+        max-width: 900px;
+    }
+
+    header input[type="search"] {
+        width: 265px;
+        background-size: 5%;
+        background-position: 6% 50%;
+    }
+
+    .menu_desctop {
+        width: 52.6%;
+    }
+
+    section .container_box {
+        flex-wrap: wrap;
+    }
+
+    .container_box .clm1 {
+        width: 434px;
+    }
+
+    .container_box .clm1:last-of-type {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .container_box .clm1:last-of-type .box {
+        width: 48%;
+    }
+
+    .container_box .clm1 .box {
+        margin: 0 0 30px;
+    }
+
+    .container_box .clm1 .baner {
+        height: 358px;
+    }
+
+}
+
+@media all and (max-width:800px) {
+    header {
+        padding: 0;
+        position: fixed;
+        z-index: 100;
+        background-color: white;
+    }
+
+    header input[type="search"] {
+        display: none;
+    }
+
+    header .navbar {
+        padding: 25px 0;
+    }
+
+    section {
+        padding: 100px 0;
+    }
+
+    .navbar .logo {
+        width: 220px !important;
+        margin: 0 0 0vw 11vw;
+    }
+
+    section .container_box {
+        max-width: 85%;
+    }
+
+    .container_box .clm1 {
+        width: 310px;
+    }
+
+    .container_box .clm1 .box {
+        padding: 18px 15px;
+    }
+
+    .container_box .payment .content .p {
+        font-size: 15px;
+    }
+
+    .container_box .clm1:last-of-type .box {
+        height: auto;
+    }
+
+    .container_box .clm1 .plane_icon {
+        width: 30px;
+        margin: 0 45px 0 -56px;
+    }
+}
+
+@media all and (max-width:500px) {
+    section .container_box {
+        max-width: 400px;
+    }
+
+    .container_box .clm1,
+    .container_box .clm1 .box,
+    .container_box .clm1:last-of-type .box {
+        width: 100%;
+    }
+
+    .container_box .clm1:last-of-type {
+        flex-direction: column;
+    }
+
+    .container_box .clm1 .plane_icon {
+        margin: 0 0 0 11px;
+    }
+
+    .container_box .clm1 .help .tittle {
+        width: 80%;
+    }
+
+    .container_box .user_info {
+        margin: 0 0 20px;
+    }
+
+    section .container_box .transp_btn {
+        margin: 0 auto;
+    }
+}
+
+@media all and (max-width:375px) {
+    section .container_box {
+        max-width: 310px;
+    }
+
+    .container_box .clm1 .plane_icon {
+        margin: 0 45px 0 -56px;
+    }
+}
+
+@media (max-width: 320px) {
+    .navbar .logo {
+        width: 185px !important;
+    }
+}
