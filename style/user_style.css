@@ -298,6 +298,7 @@ section .container_box:first-of-type {
     text-align: center;
     margin: 20px 0 0;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .container_box .clm1 .subscription_box {
