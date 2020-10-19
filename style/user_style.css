@@ -147,6 +147,11 @@ section .container_box:first-of-type {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+     background-color: transparent!important;
+}
+.container_box .clm1:hover
+{
+    background-color: transparent!important;
 }
 
 .container_box .clm1 .box {

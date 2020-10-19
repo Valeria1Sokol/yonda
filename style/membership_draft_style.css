@@ -434,7 +434,7 @@ h1 {
 
 .section2 .owl-carousel .owl-dots {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     width: auto;
     margin: 95px 0 0;
@@ -470,7 +470,7 @@ h1 {
     color: black;
     font-weight: 500;
     text-decoration: underline;
-    margin: -22px 0 0 300px;
+    margin: -22px 0 0 0px;
     width: auto;
     text-align: left;
 }
@@ -1331,6 +1331,10 @@ h1 {
         padding: 20px;
     }
 
+    .section2 .owl-carousel .owl-dots {
+        margin: 50px 0 0;
+    }
+
     .section2 .container_box {
         max-width: 450px;
     }
@@ -1358,7 +1362,9 @@ h1 {
     }
 
     .section2 .num {
-        margin: -36px 0 0 200px;
+        margin: 30px 0 0;
+        text-align: center;
+        width: 100%;
     }
 
     .slider_cont .bg_box {
