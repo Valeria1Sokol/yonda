@@ -345,8 +345,10 @@ section .container_box:first-of-type {
 }
 
 .container_box .clm1 .message_box img {
-    width: 123px;
+    width: 92px;
     height: 92px;
+    border-radius: 50%;
+    box-shadow: 0 0px 7px 0px rgba(0, 0, 0, .35);
 }
 
 .container_box .clm1 .message_box i {
@@ -356,6 +358,7 @@ section .container_box:first-of-type {
     line-height: 14px;
     opacity: 0.596576;
     text-align: center;
+    margin-top: 4px;
 }
 
 .container_box .clm1 .message_box p {
