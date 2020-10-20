@@ -147,11 +147,11 @@ section .container_box:first-of-type {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-     background-color: transparent!important;
+    background-color: transparent !important;
 }
-.container_box .clm1:hover
-{
-    background-color: transparent!important;
+
+.container_box .clm1:hover {
+    background-color: transparent !important;
 }
 
 .container_box .clm1 .box {
@@ -163,6 +163,12 @@ section .container_box:first-of-type {
     background-color: #FFFFFF;
     border-radius: 4px;
     padding: 18px 32px;
+    transition: all .5s;
+}
+
+.container_box .clm1 .box:hover {
+    background-color: #f6ecff;
+    box-shadow: 0 0px 15px 0px rgba(0, 0, 0, .35);
 }
 
 .container_box .clm1 .my_info {
@@ -247,6 +253,11 @@ section .container_box:first-of-type {
     margin: 0;
     text-transform: uppercase;
     cursor: pointer;
+    transition: .5s;
+}
+
+.container_box .clm1 .header .edit:hover {
+    text-decoration: underline;
 }
 
 .container_box .clm1 .content {
