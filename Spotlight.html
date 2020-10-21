@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YONDA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/owl.carousel.min.css">
+    <link rel="stylesheet" href="/style/owl.theme.default.css">
+
+    <link rel="stylesheet" href="/style/lightpick.css">
+
+
+    <link rel="stylesheet" href="/style/header_footer.css">
+    <link rel="stylesheet" href="/style/animation.css">
+    <link rel="stylesheet" href="/style/Spotlight_style.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="container_box">
+            <a href="index.html"><img class="logo menu_desctop " alt="yonda" src="/img/Yonda_POS_black.svg"></a>
+            <ul class="menu_desctop">
+                <li><a href="" class="menu_item">Go Deals</a></li>
+                <li><a href="search_result.html" class="menu_item">Destinations</a></li>
+                <li><a href="Spotlight.html" class="menu_item">Spotlight</a></li>
+                <li><a href="" class="menu_item">Subscriptions</a></li>
+                <li><a href="" class="menu_item">Login</a></li>
+
+                <li class="singIn_btn"><a href="" class="transp_btn">Join</a></li>
+            </ul>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="index.html"><img class="logo" alt="yonda" src="/img/Yonda_POS_black.svg"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li><a href="" class="menu_item">Go Deals</a></li>
+                        <li><a href="search_result.html" class="menu_item">Destinations</a></li>
+                        <li><a href="Spotlight.html" class="menu_item">Spotlight</a></li>
+                        <li><a href="" class="menu_item">Subscriptions</a></li>
+                        <li><a href="" class="menu_item">Login</a></li>
+
+                        <li class="singIn_btn"><a href="" class="transp_btn">Join</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="full_page_slider">
+        <div class="owl-carousel" id="sliderFool">
+            <div class="item">
+                <img class="img" alt="" src="/img/7.png">
+                <div>
+                    <p>Sydney, New South Wales</p>
+                    <a>View Deals (40)</a>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img" alt="" src="/img/8.png">
+                <div>
+                    <p>Sydney, New South Wales</p>
+                    <a>View Deals (40)</a>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img" alt="" src="/img/7.png">
+                <div>
+                    <p>Sydney, New South Wales</p>
+                    <a>View Deals (40)</a>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img" alt="" src="/img/8.png">
+                <div>
+                    <p>Sydney, New South Wales</p>
+                    <a>View Deals (40)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info_section">
+        <div class="container_box">
+            <div class="left">
+                <h3>Destination Spotlight</h3>
+                <p class="name_apart">Australia</p>
+
+                <div class="info">
+                    <p>Get excited - it’s time to plan your holiday in Australia! Our island home really has it all - natural wonders, cultural enclaves, endemic animals, a thriving foodie scene and a history that spans over 50,000 years. However the best part of travelling in Australia has got to be our Aussie hospitality - a “g’day mate” is never far away (and neither is a six-pack of beer!)</p>
+                    <p>Split into six states- there are thousands of Australia holiday itinerary combinations to choose from. And with more and more Australian’s discovering that some of the best travel experiences in the world can be found right here - there’s never been a better time to explore.</p>
+                </div>
+
+                <form action="Spotlight.html" metod="get">
+                    <div class="destination_box">
+                        <label>Destination</label>
+                        <input type="text" placeholder="Destination" class="input_box">
+                    </div>
+                    <div class="d-flex">
+                        <div class="clm">
+                            <label>Location</label>
+                            <input type="text" placeholder="Anywhere" class="input_box">
+                        </div>
+                        <div class="clm">
+                            <label>Dates</label>
+                            <input type="text" id="demo-1" class="form-control form-control-sm input_box" placeholder="Anytime" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="clm">
+                            <label>For</label>
+                            <div class="dropdown">
+                                <div class="select dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <input type="text" id="res" class="input_box" placeholder="No. of Guests">
+                                </div>
+                                <div class="dropdown-menu guest" aria-labelledby="dropdownMenuButton" onClick="event.stopPropagation();">
+                                    <p>Room1</p>
+                                    <div class="inputs">
+                                        <div class="count">
+                                            <p class="text">Adults</p>
+                                            <div class="number">
+                                                <span class="minus">-</span>
+                                                <input type="text" value="1" id="adult" />
+                                                <span class="plus">+</span>
+                                            </div>
+                                        </div>
+                                        <div class="count">
+                                            <p class="text">Children (Age 0-17)</p>
+                                            <div class="number">
+                                                <span class="minus">-</span>
+                                                <input type="text" value="0" id="child" />
+                                                <span class="plus_child">+</span>
+                                            </div>
+                                        </div>
+                                        <div class="count">
+                                            <p class="text">Child 1</p>
+                                            <select class="age">
+                                                <option> 1 year old</option>
+                                                <option> 2 years old</option>
+                                                <option> 3 years old</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="add">
+                                        <p>Add another room</p>
+                                        <a class="black_btn">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clm">
+                            <div class="checkbox">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" name="color-1" value="flexible">
+                                    <span>I’m flexible with my travel dates</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="purple_btn btn">GO</button>
+                </form>
+            </div>
+            <div class="right">
+                <p class="title">Spoilt for choices?</p>
+                <div class="expert"></div>
+                <p>Hello, I’m Brooke.</p>
+                <p>If you’d like some help narrowing down where to go on holiday in Australia, feel free to give me a call. I’m more than happy to recommend some spots based off your interests and travel preferences!</p>
+                <p class="adress">1800 773656</p>
+                <p class="adress">brooke@goyonda.com.au</p>
+                <p class="p">Check out Brooke’s</p>
+                <p><a>Top 10 Australia Must Sees ></a></p>
+            </div>
+        </div>
+        <div class="container_box">
+            <div class="line">
+                <div class="text_box">
+                    <h6>Most Popular with Members</h6>
+                    <h1>Some of our<br> favourite stays.</h1>
+                    <p class="text"><span>Providing life-changing holiday experiences in Australia is what we’re good at! </span></p>
+
+                    <p class="text">Take your pick of accommodation near the Daintree in Cairns - an ancient rainforest as old as it is biodiverse. Perhaps you need a hotel close to the world-famous Great Barrier Reef? A resort in the Outback near Ayers Rock, a room on Rottnest Island (with window views of Quokkas), or a cabin at Tasmania’s Cradle Mountain?</p>
+
+                    <p class="text">Check out these member favourites or search by location <a>here.</a></p>
+                </div>
+                <div class="img_block img_block_v1">
+                    <img alt="photo" src="img/9.png">
+                    <h1>Sea World Resort & Water Park</h1>
+                    <p>Seaworld Drive, Main Beach Queensland 4217</p>
+                    <div class="stars">
+                        <img alt="" src="/img/star.png" class="star">
+                        <img alt="" src="/img/star.png" class="star">
+                        <img alt="" src="/img/star.png" class="star">
+                        <img alt="" src="/img/star.png" class="star">
+                        <img alt="" src="/img/star.png" style="filter: grayscale(1)" class="star">
+                    </div>
+                </div>
+            </div>
+            <div class="line">
+                <div class="img_block img_block_v2">
+                    <img alt="photo" src="img/10.png">
+                    <h1>At Waters Edge Resort</h1>
+                    <p>4 Golden Orchid Drive, Airlie Beach
+                        Queensland 4802</p>
+                    <div class="stars">
+                        <img alt="" src="/img/star.png" class="star">
+                        <img alt="" src="/img/star.png" class="star">
+                        <img alt="" src="/img/star.png" class="star">
+                        <img alt="" src="/img/star.png" class="star">
+                        <img alt="" src="/img/star.png" style="filter: grayscale(1)" class="star">
+                    </div>
+                </div>
+                <div class="img_block img_block_v3">
+                    <img alt="photo" src="img/11.png">
+                    <div>
+                        <h1>Emu Walk Apartments</h1>
+                        <p>3 Yulara Drive, Yulara Northern Territory 0872</p>
+                        <div class="stars">
+                            <img alt="" src="/img/star.png" class="star">
+                            <img alt="" src="/img/star.png" class="star">
+                            <img alt="" src="/img/star.png" class="star">
+                            <img alt="" src="/img/star.png" class="star">
+                            <img alt="" src="/img/star.png" style="filter: grayscale(1)" class="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line">
+                <div class="img_block img_block_v1">
+                    <img alt="photo" src="img/9.png">
+                    <h1>Discovery Rottnest Island</h1>
+                    <p>Seaworld Drive, Main Beach Queensland 4217</p>
+                    <div class="stars">
+                        <img alt="" src="/img/star.png" class="star">
+                        <img alt="" src="/img/star.png" class="star">
+                        <img alt="" src="/img/star.png" class="star">
+                        <img alt="" src="/img/star.png" class="star">
+                        <img alt="" src="/img/star.png" style="filter: grayscale(1)" class="star">
+                    </div>
+                </div>
+                <div class="img_block img_block_v2">
+                    <img alt="photo" src="img/10.png">
+                    <h1>Peppers Cradle Mountain</h1>
+                    <p>4038 Cradle Mountain Road, Cradle Mountain Tasmania 7306</p>
+                    <div class="stars">
+                        <img alt="" src="/img/star.png" class="star">
+                        <img alt="" src="/img/star.png" class="star">
+                        <img alt="" src="/img/star.png" class="star">
+                        <img alt="" src="/img/star.png" class="star">
+                        <img alt="" src="/img/star.png" style="filter: grayscale(1)" class="star">
+                    </div>
+                </div>
+            </div>
+            <div class="line">
+                <div class="img_block img_block_v3">
+                    <img alt="photo" src="img/11.png">
+                    <div>
+                        <h1>Seahaven Beachfront Resort Noosa</h1>
+                        <p>15 Hastings Street, Noosa Heads Queensland 4567</p>
+                        <div class="stars">
+                            <img alt="" src="/img/star.png" class="star">
+                            <img alt="" src="/img/star.png" class="star">
+                            <img alt="" src="/img/star.png" class="star">
+                            <img alt="" src="/img/star.png" class="star">
+                            <img alt="" src="/img/star.png" style="filter: grayscale(1)" class="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section4">
+        <div class="container_box">
+            <div class="top">
+                <div class="left_box">
+                    <div class="accordion" id="accordionExample">
+                    </div>
+
+                    <div class="accordion">
+                        <div class="card">
+                            <div class="title" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                Our Top Australia Must-Do’s
+                            </div>
+                            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <span>See Uluru.</span>
+                                    <p class="text">This UNESCO World Heritage Site is world famous for a reason. Imagine, almost 900 metres tall and 3.6 kilometres long in the middle of the red desert, this sacred sandstone rock has got to be the most iconic Australian natural landmark there is. While you’re here - why not check out Kata Tjuta (The Olgas), another jaw-dropping natural attraction here.</p>
+                                    <span>Snorkel the Great Barrier Reef.</span>
+                                    <p class="text">Every Australian needs to experience the GBR. Fringing the upper coastline of Australia, the largest coral reef system in the world will change your perception of coral reefs forever. The colours! The fish! Just amazing.</p>
+                                    <span>Road trip along the coast (any coast!)</span>
+                                    <p class="text">From the east to the west, there are some (excuse the expression) ripper road trips to be experienced in Australia. Check out The Great Ocean Road, or even drive from Sydney to Brisbane where you’ll find fabulous coastal views, and some amazing hinterland sights as well.</p>
+                                    <span>Tick off each capital city.</span>
+                                    <p class="text">A valiant quest to really get to know know our great country, is to spend time in each capital city. From Melbourne to Perth, each is charming in its own way.</p>
+                                    <span>Experience Tasmania.</span>
+                                    <p class="text">Just because good ol' Tassie is off the mainland doesn’t mean it should be off your map. In fact, we’d place it more towards the top of your travel hit-list. With a fabulous food and wine scene and a thriving arts community - you’ll simply love Tasmania.</p>
+                                    <span>Learn about and immerse yourself in Aboriginal culture.</span>
+                                    <p class="text">Australia’s First Nations People hail from what’s believed to be the oldest civilisation on earth.Whether it’s buying traditional art or viewing a Corroboree, getting to know Aboriginal Australian history will enrich and educate your Aussie travel experience. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="right_box">
+                    <div class="accordion">
+                        <div class="card">
+                            <div class="title" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Australia Travel Tips
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="text"><span>Pack good quality shoes.</span> From beach to desert, you’ll need shoes that can cope with both!</p>
+                                    <p class="text"><span>Bring insect repellent.</span> You won't regret it - especially in our wet tropics.</p>
+                                    <p class="text"><span>Don’t forget the sunscreen.</span> Our sun is brutal, especially in summer. Make sure you cover up, bring a hat and apply sunscreen liberally. Hot tip: check your sunscreen is reef safe before you swim near our coral reefs.</p>
+                                    <p class="text"><span>Respect our beaches.</span> Pick up your rubbish and leave nothing but footprints. Be aware of designated swimming areas and always swim between the flags.</p>
+                                    <p class="text"><span>Make time for the cities.</span> Allow 2-3 days in each. And if you’re unsure where to choose? A long weekend in Melbourne or on the Gold Coast always hits the spot.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="card">
+                            <div class="title" id="headingSix" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">Image Gallery</div>
+                            <div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="img_box">
+                                        <div class="img"></div>
+                                        <div class="img"></div>
+                                        <div class="img"></div>
+                                        <div class="img"></div>
+                                        <div class="img"></div>
+                                        <div class="img"></div>
+                                    </div>
+                                    <a class="view" href>View All (24)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+<!--
+    <section class="section5">
+        <div class="container_box">
+            <h1>Show me insider deals to...</h1>
+            <form action="search_result.html" method="get">
+                <div>
+                    <label>Destination <img alt="" src="/img/arrow_down.png"></label>
+                    <input type="text" placeholder="Hawaii, USA" class="input_box">
+                </div>
+                <div>
+                    <label>Location <img alt="" src="/img/arrow_down.png"></label>
+                    <input type="text" placeholder="Anywhere" class="input_box">
+                </div>
+                <div>
+                    <label>Dates <img alt="" src="/img/arrow_down.png"></label>
+                    <input type="text" id="demo-2" class="form-control form-control-sm input_box" placeholder="Anytime" />
+                </div>
+                <div>
+                    <label>For <img alt="" src="/img/arrow_down.png"></label>
+                    <div class="dropdown">
+                        <div class="select dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <input type="text" id="result" class="input_box" placeholder="Number of Guests">
+                        </div>
+                        <div class="dropdown-menu guest" aria-labelledby="dropdownMenuButton" onClick="event.stopPropagation();">
+                            <p>Room1</p>
+
+                            <div class="inputs">
+                                <div class="count">
+                                    <p class="text">Adults</p>
+                                    <div class="number">
+                                        <span class="minus">-</span>
+                                        <input type="text" value="1" id="adult1" />
+                                        <span class="plus">+</span>
+                                    </div>
+                                </div>
+                                <div class="count">
+                                    <p class="text">Children (Age 0-17)</p>
+                                    <div class="number">
+                                        <span class="minus">-</span>
+                                        <input type="text" value="0" id="child1" />
+                                        <span class="plus_child">+</span>
+                                    </div>
+                                </div>
+                                <div class="count">
+                                    <p class="text">Child 1</p>
+                                    <select class="age">
+                                        <option> 1 year old</option>
+                                        <option> 2 years old</option>
+                                        <option> 3 years old</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="add">
+                                <p>Add another room</p>
+                                <a class="sec5_btn">Apply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="purple_btn btn">GO</button>
+            </form>
+        </div>
+
+    </section>
+-->
+
+<!--
+    <section class="section6_slider">
+        <h6>Australian Destinations</h6>
+        <h1>Search by Location</h1>
+
+
+        <div class="owl-carousel" id="slider">
+            <div class="item">
+                <div class="img_box">
+                    <img alt="" src="img/1.png"></div>
+                <div class="info_box">
+                    <p class="tittle">Australia</p>
+                    <div class="location_box">
+                        <img alt="" src="img/location_icon.png">
+                        <p>(62)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+
+
+    <footer>
+        <div class="container_box">
+            <div class="row">
+                <a href="index.html"><img class="logo" alt="yonda" src="/img/Yonda_POS_black.svg"></a>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <div class="column">
+                        <a href="">Privacy Policy</a>
+                        <a href="">Terms & Conditions</a>
+                        <a href="">Data Collection & Usage</a>
+                        <a href="">Legal Notices</a>
+                    </div>
+                    <div class="column">
+                        <a href="">Corporate information</a>
+                        <a href="">About Yonda</a>
+                        <a href="">Careers</a>
+                        <a href="">Media</a>
+                    </div>
+                    <div class="column">
+                        <a href="">Acount Help</a>
+                        <a href="">Contact Us</a>
+                        <div class="social">
+                            <a href="" class="face"></a>
+                            <a href="" class="inst"></a>
+                            <a href="" class="pint"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="column">
+                        <a href="" class="app"><img src="/img/app.png" alt=""></a>
+                        <p>Yonda App coming soon.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="bottom">
+                    <p class="text">Powered by Australia’s favourite travel companions</p>
+                    <div class="img_box">
+                        <img class="icon1" alt="" src="/img/jetstar_w.png">
+                        <img class="icon2" alt="" src="/img/icon2.png">
+                        <img class="icon3" alt="" src="/img/icon3.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="/script/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+
+    <script src="/script/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="/script/lightpick.js"></script>
+    <script src="script/spotlight_script.js"></script>
+
+    <script src="/script/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#sliderFool').owlCarousel({
+                loop: true,
+                nav: false,
+                dots: true,
+                touchDrag: true,
+                responsiveClass: true,
+                center: true,
+                slideBy: 1,
+                transitions: '1s',
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    900: {
+                        items: 2
+                    }
+                },
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true
+            });
+        });
+//        $('#slider').owlCarousel({
+//            loop: true,
+//            nav: false,
+//            dots: true,
+//            touchDrag: true,
+//            responsiveClass: true,
+//            center: true,
+//            slideBy: 1,
+//            transitions: '1s',
+//             responsive: {
+//                    0: {
+//                        items: 1
+//                    },
+//                    900: {
+//                        items: 3,
+//                        margin: 40,
+//                        
+//                    }
+//                },
+//        });
+
+    </script>
+</body>
+
+</html>

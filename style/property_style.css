@@ -382,13 +382,9 @@ header {
     height: 26px;
 }
 
-
-
 .search_section label img {
     margin: 0 9px 0 0;
 }
-
-
 
 .search_section input:active,
 .search_section select :active,
@@ -397,7 +393,6 @@ header {
     border: 1px solid #ededec;
     outline: none;
 }
-
 
 
 .d-flex {
@@ -566,7 +561,6 @@ header {
     background-image: url(/img/arrow_down.png);
     background-position: 93% center;
     background-repeat: no-repeat;
-    /*    background-size: 4%;*/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1140,7 +1134,6 @@ header {
 
 .section4 .map {
     width: 100%;
-    /*    height: 220px;*/
     margin: 0 0 5px;
 }
 
@@ -1403,6 +1396,10 @@ header {
     .info_section .add_section,
     .info_section .grey {
         font-size: 10px;
+    }
+
+    header .container_box {
+        max-width: 900px;
     }
 
     .container_box {
@@ -1733,17 +1730,6 @@ header {
         width: 24.6vw;
         height: 87px;
     }
-
-    /*
-    .search_section input {
-        width: 37.2vw;
-    }
-
-    .search_section .select {
-        width: 57.2vw;
-    }
-*/
-
     .serch_res .left .img {
         height: 52vw;
     }
@@ -1798,7 +1784,6 @@ header {
         left: 0 !important;
         margin: 0 1vw;
     }
-
 }
 
 @media all and (max-width:375px) {
@@ -1828,11 +1813,9 @@ header {
         width: 313px;
         margin: 2.3vw 6vw 0;
         padding: 10px;
-
     }
 
     .lightpick__month {
-        /* padding: 4px; */
         width: 100%;
     }
 

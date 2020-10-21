@@ -379,7 +379,6 @@ header {
 .all_func .row {
     transition: background-color .5s;
     transition: box-shadow .5s;
-    /*    padding: 0 0 0 8px;*/
 }
 
 .all_func .row1:hover,

@@ -326,7 +326,6 @@ h1 {
 }
 
 .slide {
-    /*    width: 528px;*/
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -528,10 +527,6 @@ h1 {
 
 .section4 .container_box,
 .section5 .container_box {
-    /*
-    max-width: 1445px;
-    width: 100%;
-*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -790,7 +785,6 @@ h1 {
     .section6 .container_box {
         max-width: 1400px;
     }
-
 }
 
 
@@ -878,10 +872,6 @@ h1 {
     h1 {
         font-size: 36px;
         line-height: 1.3;
-    }
-
-    .container_box {
-        /*    max-width: 0px;*/
     }
 
     .section1 {

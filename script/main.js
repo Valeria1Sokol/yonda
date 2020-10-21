@@ -161,8 +161,6 @@ $(document).ready(function () {
         if ($input.val() <= 16) {
             $input.val(parseInt($input.val()) + 1);
         }
-
-
         $input.change();
         return false;
     });
