@@ -1335,6 +1335,10 @@ header {
         margin: 50px 0 0;
     }
 
+    .info_section .img_block_v2 {
+        width: 100%;
+    }
+
     .info_section .container_box .line:nth-of-type(2),
     .info_section .container_box .line:nth-of-type(3) {
         align-items: flex-end;
@@ -1562,8 +1566,8 @@ header {
         width: 100%;
         margin: 0 0 18px;
     }
-    .info_section .left form .row
-    {
+
+    .info_section .left form .row {
         margin: 0;
     }
 
