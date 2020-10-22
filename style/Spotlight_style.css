@@ -665,6 +665,12 @@ header {
     margin-top: 258px;
 }
 
+.info_section .line a {
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+}
+
 .info_section .img_block_v2 {
     width: 345px;
 }
@@ -1335,7 +1341,8 @@ header {
         margin: 50px 0 0;
     }
 
-    .info_section .img_block_v2 {
+    .info_section .img_block_v2,
+    .info_section .line a {
         width: 100%;
     }
 
