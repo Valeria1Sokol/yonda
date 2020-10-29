@@ -1,40 +1,6 @@
-h6 {
-    font-size: 16px;
-    font-weight: 600;
-    margin: 0;
-}
-
-p {
-    margin: 0;
-    padding: 0;
-    cursor: default;
-}
-
-span {
-    cursor: default;
-}
-
-h1 {
-    font-weight: 300;
-    line-height: 40px;
-    margin: 15px 0 0;
-    overflow: hidden;
-    font-size: 36px;
-}
-
-h3 {
-    font-size: 25px;
-    font-weight: 300;
-}
-
 header {
     position: relative;
 
-}
-
-.container_box {
-    width: 100%;
-    max-width: 1200px;
 }
 
 .full_page_slider {
@@ -487,7 +453,7 @@ header {
     border-radius: 6px;
     padding: 0 10px;
     background-color: white;
-    background-image: url(../img/arrow_down.png);
+    background-image: url(/img/arrow_down.png);
     background-position: 93% center;
     background-repeat: no-repeat;
     /*    background-size: 4%;*/
@@ -622,9 +588,10 @@ header {
     font-weight: bold;
 }
 
-.info_section .text_box a {
+.info_section .text_box .text_link {
     border-bottom: 1px solid rgba(0, 0, 0, 0.8);
     cursor: pointer;
+    color: black;
 }
 
 .info_section .container_box .line {
@@ -665,10 +632,11 @@ header {
     margin-top: 258px;
 }
 
-.info_section .line a {
+.info_section .line .anchor {
     text-decoration: none;
     cursor: pointer;
     display: flex;
+    color: black;
 }
 
 .info_section .img_block_v2 {
@@ -725,10 +693,6 @@ header {
 
 
 .section4 {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: black;
     padding: 114px 0 195px;
 }
@@ -831,10 +795,6 @@ header {
 }
 
 .section5 {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 96px 0 105px;
     background-image: url(/img/cloub_bg.png);
     background-position: center;
@@ -1076,8 +1036,6 @@ header {
 
 .section6_slider .owl-carousel {
     margin-top: 110px;
-    /*    left: -100px;*/
-    /*    width: 100%;*/
 }
 
 .section6_slider .item {
@@ -1168,7 +1126,7 @@ header {
 
 @media all and (max-width:1024px) {
 
-    .container_box {
+    .info_section .container_box {
         max-width: 900px;
     }
 
@@ -1251,13 +1209,10 @@ header {
     header {
         position: fixed;
     }
-
-    .full_page_slider .container_box,
-    .info_section .container_box,
-    .section4 .container_box,
-    .section5 .container_box,
-        {
-        max-width: 450px;
+    
+    header .container_box
+    {
+        max-width: 900px;
     }
 
     .full_page_slider {
@@ -1275,7 +1230,6 @@ header {
 
     .info_section .container_box {
         padding: 0 30px;
-        width: 100%;
         max-width: 450px;
     }
 
@@ -1531,8 +1485,6 @@ header {
     .section5 form div {
         margin: 0 0 20px;
     }
-
-
 
 }
 

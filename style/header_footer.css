@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    /*    overflow-x: hidden;*/
     box-sizing: border-box;
 }
 
@@ -42,7 +41,7 @@ a {
 }
 
 header {
-   
+
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -50,9 +49,10 @@ header {
     align-items: center;
     position: absolute;
     top: 3.4vw;
+    /*    padding: 0 5.5vw;*/
 }
-header .container_box
-{
+
+header .container_box {
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -294,10 +294,10 @@ footer .icon5 {
 }
 
 @media all and (max-width:800px) {
-   .container_box
-    {
+    .container_box {
         max-width: 400px;
     }
+
     .menu_desctop {
         display: none;
     }
@@ -374,7 +374,7 @@ footer .icon5 {
         margin: 0;
         display: flex;
         flex-direction: column;
-        
+
     }
 
     .navbar-collapse {
@@ -457,15 +457,145 @@ footer .icon5 {
         margin: 0 11vw 5px 0;
     }
 }
-@media all and (max-width:500px)
-{
+
+@media all and (max-width:500px) {
     .section2 .container_box {
-    width: 78%;
-}
+        width: 78%;
+    }
 }
 
 @media all and (max-width:320px) {
     .logo {
         width: 185px !important;
     }
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-dialog {
+    max-width: 49%;
+    margin: 2% auto;
+}
+
+.modal-content {
+    margin: 0 0 4.5vw;
+    border-radius: 0;
+    border: none;
+}
+
+.modal_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.modal_box .header {
+    width: 100%;
+    background: rgb(223, 218, 232);
+    background: linear-gradient(90deg, rgba(223, 218, 232, 1) 20%, rgba(253, 220, 208, 1) 67%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 18px 18px 24px;
+    color: black;
+    border: none;
+    line-height: 1.2;
+}
+
+.modal_box .body {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 0 2.2vw;
+    border: none;
+}
+
+.modal_box .body img {
+    width: 7.1vw;
+}
+
+.modal_box .body .text {
+    font-weight: 600;
+    margin: 1.6vw 0 0.74vw;
+}
+
+.modal_box .body h5 {
+    font-size: 30px;
+    font-family: RecklessNeue;
+    text-align: center;
+    margin: 0;
+}
+
+.modal_box .body .btn_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 3.4vw 0 2.2vw;
+    transition: all .5s;
+}
+
+.modal_box .body .purple_btn {
+    margin: 0 20px 0 0;
+}
+
+.modal_box .body .title {
+    font-size: 12px;
+    margin: 0 0 16px 0;
+    text-align: center;
+    line-height: 1;
+}
+
+.modal-dialog .close_modal {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 auto;
+
+}
+
+.modal-dialog .close_modal img {
+    margin: 0 5px 0 0;
+    width: 4px;
+    cursor: pointer;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.modal-dialog .btn {
+    width: 220px;
+    height: 46px;
+    padding: 0;
+}
+
+
+@media all and (max-width:800px) {
+    .slider_cont .modal_box {
+        width: 80%;
+        margin: 40px 0 32px;
+
+    }
+}
+
+@media all and (max-width:320px) {
+    .slider_cont .modal_box {
+        width: 300px;
+    }
+}
+
+.btn {
+    width: 220px;
+    height: 46px;
+    padding: 0;
 }

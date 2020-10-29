@@ -1,39 +1,9 @@
-h6 {
-    font-size: 16px;
-    font-weight: 600;
-    margin: 0;
-    cursor: default;
-}
-
-p {
-    margin: 0;
-    padding: 0;
-
-}
-
-h1 {
-    font-size: 36px;
-    font-weight: 300;
-    margin: 15px 0 0;
-    overflow: hidden;
-    cursor: default;
-}
-
-.container_box {
-    max-width: 1200px;
-    width: 100%;
-}
-
 .section1 {
     padding: 14vw 0 7vw;
     background-image: url(../img/cloub_bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
 }
 
@@ -206,8 +176,6 @@ h1 {
     background-color: #883ff4;
 }
 
-
-
 .section1 .purple_btn {
     font-size: 34.6px;
     font-weight: 500;
@@ -376,8 +344,12 @@ h1 {
     margin-top: 20px;
     width: 60%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+
+.section1 .bottom img {
+    margin: 0 15px 0;
 }
 
 .section1 .bottom .icon1 {
@@ -401,18 +373,12 @@ h1 {
 }
 
 .section2 {
-    width: 100vw;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 8vw 0 9vw;
 }
 
-.section2 h6 {}
 
 .section2 .container_box {
-    max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -523,10 +489,15 @@ h1 {
     position: relative;
 }
 
+.serch_res .left .img a {
+    position: absolute;
+    height: 100%;
+}
+
 .serch_res .left .img img {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: relative;
     z-index: 0;
     top: 0;
     left: 0;
@@ -571,8 +542,6 @@ h1 {
     width: 16px;
     position: relative;
 }
-
-
 
 .serch_res .left .white_text {
     background-color: white;
@@ -739,7 +708,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 71%;
+    width: 100%;
 }
 
 .serch_res .quick_info li {
@@ -783,14 +752,8 @@ h1 {
     width: 27px;
 }
 
-
-
 .slider_tree {
-    width: 100vw;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-image: url(/img/section3_bg.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -985,18 +948,12 @@ h1 {
     outline: none;
 }
 
-
-
 .section3 {
     padding: 7vw 0;
     background-image: url(/img/BG1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .section3 .container_box {
@@ -1173,10 +1130,6 @@ h1 {
 }
 
 .section4 {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 10.2vw 0 6.8vw;
 }
 
@@ -1207,12 +1160,17 @@ h1 {
 
 .section4 .img_box {
     width: 100%;
-    height: 240px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
 }
 
+.section4 .img_box a
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
 .section4 .img_box .text {
     background-color: black;
     font-size: 18px;
@@ -1221,7 +1179,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: absolute;
     z-index: 2;
     color: white;
     padding: 2px 0;
@@ -1230,7 +1188,6 @@ h1 {
 }
 
 .section4 .img_box img {
-    position: absolute;
     max-width: 362px;
 }
 
@@ -1269,10 +1226,6 @@ h1 {
 
 @media all and (max-width:1200px) {
 
-    .container_box {
-        max-width: 900px;
-    }
-
     .slider_tree .owl-carousel {
         max-width: 900px;
     }
@@ -1280,10 +1233,6 @@ h1 {
     .slider_tree .item {
         height: 375px;
         padding: 15px;
-    }
-
-    .section2 .container_box {
-        max-width: 900px;
     }
 
     .serch_res .right {
@@ -1297,17 +1246,9 @@ h1 {
         width: 75%;
     }
 
-
 }
 
 @media all and (max-width:800px) {
-    h1 {
-        line-height: 1.3;
-    }
-
-    .section1 .container_box {
-        max-width: 450px;
-    }
 
     .section1 {
         padding: 180px 0 90px;
@@ -1335,12 +1276,10 @@ h1 {
         margin: 50px 0 0;
     }
 
-    .section2 .container_box {
-        max-width: 450px;
-    }
-
     .section2 .serch_res {
         flex-direction: column;
+        max-width: 100%;
+        width: 100%;
     }
 
     .section2 {
@@ -1482,10 +1421,8 @@ h1 {
         margin-top: 38px;
     }
 
-
     .section3 .container_box {
         flex-direction: column-reverse;
-        max-width: 450px;
     }
 
     .section3 .left {
@@ -1562,10 +1499,6 @@ h1 {
         padding: 100px 0 80px;
     }
 
-    .section4 .container_box {
-        max-width: 450px;
-    }
-
     .section4 .destinations_cont .box {
         width: 100%;
         margin: 0 0 50px;
@@ -1600,11 +1533,7 @@ h1 {
 
 
 @media all and (max-width:425px) {
-    h1 {
-        font-size: 28px;
-        line-height: 1.4;
-    }
-
+ 
     .section3 .item {
         width: 100%;
     }

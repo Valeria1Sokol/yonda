@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="/style/header_footer.css">
     <link rel="stylesheet" href="/style/animation.css">
+    <link rel="stylesheet" href="/style/general.css">
     <link rel="stylesheet" href="/style/property_style.css">
 
 </head>
@@ -24,10 +25,10 @@
         <div class="container_box">
             <a href="index.html"><img class="logo menu_desctop " alt="yonda" src="/img/Yonda_POS_black.svg"></a>
             <ul class="menu_desctop">
-                <li><a href="" class="menu_item">Go Deals</a></li>
+                <li><a href="membership_Draft.html" class="menu_item">Go Deals</a></li>
                 <li><a href="search_result.html" class="menu_item">Destinations</a></li>
                 <li><a href="Spotlight.html" class="menu_item">Spotlight</a></li>
-                <li><a href="" class="menu_item">Subscriptions</a></li>
+                <li><a href="membership.html" class="menu_item">Subscriptions</a></li>
                 <li><a href="" class="menu_item">Login</a></li>
 
                 <li class="singIn_btn"><a href="" class="transp_btn">Join</a></li>
@@ -88,12 +89,16 @@
                 </div>
             </div>
             <div class="right">
-                <p class="title">Meet our Expert</p>
-                <div class="expert"></div>
-                <p>Hi, I'm Yasmin.</p>
-                <p>If you have any questions about this location or deals on offer, feel free to ask me.</p>
+                <div>
+                    <p class="title">Meet our Expert</p>
+                    <div class="expert"></div>
+                </div>
+                <div class="expertInfo">
+                    <p>Hi, I'm Yasmin.</p>
+                    <p>If you have any questions about this location or deals on offer, feel free to ask me.</p>
 
-                <p class="adress">1800 096 632</p>
+                    <p class="adress">1800 096 632</p>
+                </div>
 
             </div>
         </div>
@@ -166,7 +171,9 @@
             <div class="serch_res">
                 <div class="left">
                     <div class="img"> <img alt="" src="/img/view.png">
-                        <p class="white_text">10% OFF</p>
+                        <div class="text_on_img">
+                            <p class="white_text">10% OFF</p>
+                        </div>
                     </div>
                     <div class="btn_box">
                         <a href class="black_btn">Room Photos (4)</a>
@@ -207,8 +214,10 @@
             <div class="serch_res">
                 <div class="left">
                     <div class="img"> <img alt="" src="/img/view.png">
-                        <p class="black_text">FLASH OFFER <span>10 : 20 : 36</span></p>
-                        <p class="white_text">10% OFF</p>
+                        <div class="text_on_img">
+                            <p class="black_text">FLASH OFFER <span>10 : 20 : 36</span></p>
+                            <p class="white_text">10% OFF</p>
+                        </div>
                     </div>
                     <div class="btn_box">
                         <a href class="black_btn">Room Photos (4)</a>
@@ -493,7 +502,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
 
     <script src="/script/jquery.min.js"></script>
-    
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <script src="/script/lightpick.js"></script>
@@ -545,6 +554,4 @@
             // console.log(child_num);
         })
     </script>
-</body>
-
-</html>
+</body></html>

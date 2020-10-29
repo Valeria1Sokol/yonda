@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YONDA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style/header_footer.css">
+    <link rel="stylesheet" href="/style/animation.css">
+    <link rel="stylesheet" href="/style/general.css">
+    <link rel="stylesheet" href="/style/joinModal_style.css">
+    <link rel="stylesheet" href="/style/booking_page_style.css">
+
+
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="container_box">
+            <a href="index.html"><img class="logo menu_desctop " alt="yonda" src="/img/Yonda_POS_black.svg"></a>
+            <ul class="menu_desctop">
+                <li><a href="membership_Draft.html" class="menu_item">Go Deals</a></li>
+                <li><a href="search_result.html" class="menu_item">Destinations</a></li>
+                <li><a href="Spotlight.html" class="menu_item">Spotlight</a></li>
+                <li><a href="membership.html" class="menu_item">Subscriptions</a></li>
+                <li><a href="" class="menu_item">Login</a></li>
+
+                <li class="singIn_btn"><a class="transp_btn join_btn_Click" data-toggle="modal" data-target="#joinModal">Join</a></li>
+            </ul>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="index.html"><img class="logo" alt="yonda" src="/img/Yonda_POS_black.svg"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li><a href="" class="menu_item">Go Deals</a></li>
+                        <li><a href="search_result.html" class="menu_item">Destinations</a></li>
+                        <li><a href="Spotlight.html" class="menu_item">Spotlight</a></li>
+                        <li><a href="" class="menu_item">Subscriptions</a></li>
+                        <li><a href="" class="menu_item">Login</a></li>
+
+                        <li class="singIn_btn"><a class="transp_btn" data-toggle="modal" data-target="#joinModal">Join</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container_box">
+            <div class="left_box">
+                <h3>Secure your booking in less than 1 minute</h3>
+                <div class="user_info">
+                    <img alt="user" src="img/Yasmin-Yonda.jpg" class="user_img">
+                    <p>You’re making this booking as</p>
+                    <a class="user_name">User Name</a>
+                    <button type="button" class="tooltip_box" data-toggle="tooltip" data-placement="right" title="Hello!">i
+                    </button>
+                </div>
+                <form>
+                    <p class="title">Room 1:</p>
+                    <p class="booking_info">2 Adults + 1 Child</p>
+                    <p class="booking_info">1 King Bed + 1 Double Sofa Bed</p>
+                    <p class="booking_info">Non-smoking</p>
+                    <p class="booking_info">Free Wifi</p>
+
+                    <div class="input_box">
+                        <label>Contact Name</label>
+                        <div>
+                            <input type="text" placeholder="Enter name">
+                            <label class="edit">edit</label>
+                        </div>
+                    </div>
+                    <div class="input_box">
+                        <label>Mobile Number</label>
+                        <div>
+                            <input type="tel" placeholder="Enter phone number">
+                            <label class="edit">edit</label>
+                        </div>
+                    </div>
+                    <div class="input_box">
+                        <label>Address</label>
+                        <div>
+                            <input type="text" placeholder="Enter address">
+                            <label class="edit">edit</label>
+                        </div>
+                    </div>
+                    <div class="input_box">
+                        <label>Special Requirements?</label>
+                        <div class="requirements">
+                            <label class="custom-checkbox">
+                                <input type="radio" checked name="yes_no" />
+                                <span>None</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="radio" name="yes_no" />
+                                <span>Yes</span>
+                            </label>
+                            <select>
+                                <option disabled>Select</option>
+                                <option>Select</option>
+                                <option>Select</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <p class="title">Secure Booking:</p>
+                    <div class="input_box">
+                        <label>Cardholder Name</label>
+                        <div>
+                            <input type="text" placeholder="Enter User Name">
+                            <label class="edit">edit</label>
+                        </div>
+                    </div>
+                    <div class="input_box">
+                        <label>Debit / Credit Card Number</label>
+                        <div>
+                            <input type="text" placeholder="0000 0000 0000 0000">
+                            <label class="edit">use different card</label>
+                        </div>
+                    </div>
+                    <div class="input_box">
+                        <div class="clm">
+                            <label>Expiry</label>
+                            <div>
+                                <input type="text" placeholder="00/00">
+                            </div>
+                        </div>
+                        <div class="clm">
+                            <label>CCV</label>
+                            <div>
+                                <input type="text" placeholder="000">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="title">Your Confirmation will be sent to...</p>
+                    <div class="input_box">
+                        <label>Email</label>
+                        <div>
+                            <input type="email" placeholder="Enter Email">
+                            <label class="edit">edit</label>
+                        </div>
+                    </div>
+                    <p class="note">This special discounted rate is non-refundable. If you choose to change or cancel this booking you will not be refunded any of the payment.
+                        <br>If you are planning to arrive after 10:00 PM please contact the property in advance using the information on the booking confirmation. Guests must contact the property in advance for check-in instructions. Front desk staff will greet guests on arrival.
+                        <br>By selecting to complete this booking I acknowledge that I have read and accept the Rules & Restrictions, Terms of Use, Privacy Policy and Government Travel Advice Opens.</p>
+                    <div class="total_box">
+                        <div>
+                            <p>$448<span>.20</span></p>
+                            <span>4 nights <br>For 3 people</span>
+                        </div>
+                        <a href="" class="purple_btn btn">Confirm and Book</a>
+                        <a href="" class="purple_btn btn mobile_btn">Book</a>
+                    </div>
+                    <p class="note">This special discounted rate is non-refundable. If you choose to change or cancel this booking you will not be refunded any of the payment.
+                        <br>If you are planning to arrive after 10:00 PM please contact the property in advance using the information on the booking confirmation. Guests must contact the property in advance for check-in instructions. Front desk staff will greet guests on arrival.
+                        <br>By selecting to complete this booking I acknowledge that I have read and accept the Rules & Restrictions, Terms of Use, Privacy Policy and Government Travel Advice Opens.</p>
+                </form>
+            </div>
+            <div class="right_box">
+                <div class="info_box">
+                    <p class="note">Deal ID 3440</p>
+                    <div class="clm_mob">
+                        <div>
+                            <h3>Noosa, Sunshine Coast</h3>
+                            <h1>Peppers Noosa
+                                Resort & Spa</h1>
+                        </div>
+                        <div class="img_box">
+                            <img alt="" src="img/10.png">
+                            <div class="stars">
+                                <img alt="" src="/img/star.png">
+                                <img alt="" src="/img/star.png">
+                                <img alt="" src="/img/star.png">
+                                <img alt="" src="/img/star.png">
+                                <img alt="" src="/img/star.png" style="filter: grayscale(1)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p class="tittle">Room 1</p>
+                        <p class="info_text">One Bedroom Apartment</p>
+                    </div>
+                    <div class="info">
+                        <p class="tittle">4 Night Stay</p>
+                        <p class="info_text">Check In (TUE, 16 JUN)<br>
+                            Check Out (SAT, 20 JUN)</p>
+                    </div>
+                    <div class="info">
+                        <p class="purple_tittle">Over your 4 night stay <br><span class="tittle">You’ll save $640.00</span></p>
+                    </div>
+                    <p class="border_line"></p>
+                    <div class="info">
+                        <p class="tittle">Room 1 Summary</p>
+                    </div>
+                    <div class="info">
+                        <p class="tittle">Guests</p>
+                        <p class="info_text">2 adults ($00.00 per person)<br>1 child (free)</p>
+                    </div>
+                    <div class="info">
+                        <p class="tittle">4 Night Stay</p>
+                        <p class="info_text">AU $407.44</p>
+                    </div>
+                    <div class="info">
+                        <p class="tittle">Booking Fee</p>
+                        <p class="info_text">AU $407.44</p>
+                    </div>
+                    <p class="border_line"></p>
+                    <div class="info">
+                        <p class="purple_tittle tittle">Trip Total</p>
+                        <p class="purple_tittle tittle"> AU $448.20</p>
+                    </div>
+                    <div class="btn_box">
+
+                        <a href="" class="transp_btn btn">Edit Booking</a>
+                        <a href="" class="purple_btn btn">Use Voucher</a>
+                    </div>
+                    <a href="" class="purple_btn btn mobile_btn">Confirm</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container_box">
+            <div class="row">
+                <a href="index.html"><img class="logo" alt="yonda" src="/img/Yonda_POS_black.svg"></a>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <div class="column">
+                        <a href="">Privacy Policy</a>
+                        <a href="">Terms & Conditions</a>
+                        <a href="">Data Collection & Usage</a>
+                        <a href="">Legal Notices</a>
+                    </div>
+                    <div class="column">
+                        <a href="">Corporate information</a>
+                        <a href="">About Yonda</a>
+                        <a href="">Careers</a>
+                        <a href="">Media</a>
+                    </div>
+                    <div class="column">
+                        <a href="">Acount Help</a>
+                        <a href="">Contact Us</a>
+                        <div class="social">
+                            <a href="" class="face"></a>
+                            <a href="" class="inst"></a>
+                            <a href="" class="pint"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="column">
+                        <a href="" class="app"><img src="/img/app.png" alt=""></a>
+                        <p>Yonda App coming soon.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="bottom">
+                    <p class="text">Powered by Australia’s favourite travel companions</p>
+                    <div class="img_box">
+                        <img class="icon1" alt="" src="/img/jetstar_w.png">
+                        <img class="icon2" alt="" src="/img/icon2.png">
+                        <img class="icon3" alt="" src="/img/icon3.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Welcome to the new way to go</h5>
+                    <!--
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+-->
+                </div>
+                <div class="modal-body">
+                    <form id="regForm" action="booking_page.html">
+                        <div class="step1 step">
+                            <div class="step_body">
+                                <h2>Step 1. Your Details</h2>
+                                <p class="tittle">Create a Profile</p>
+                                <form>
+                                    <input type="text" placeholder="First Name">
+                                    <input type="text" placeholder="Last Name">
+                                    <input type="tel" placeholder="Mobile Number">
+                                    <input type="email" placeholder="Email">
+                                    <a href="" class="purple_btn btn">Continue</a>
+                                </form>
+                            </div>
+                            <div class="step_footer">
+                                <p class="tittle">Or sign up using</p>
+                                <div class="btn_box">
+                                    <a href="" class="face_btn btn">Facebook</a>
+                                    <a href="" class="google_btn btn">Google</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step2 step">
+                            <div class="step_body">
+                                <h2>Step 2. Your Travel Preferences</h2>
+                                <p class="tittle">For More Personalised Deals...</p>
+                                <form>
+                                    <select>
+                                        <option disabled>I usally travel ...</option>
+                                        <option>I usally travel ...</option>
+                                    </select>
+                                    <select>
+                                        <option disabled>I like to travel ...</option>
+                                        <option>I like to travel ...</option>
+                                    </select>
+                                    <div>
+                                        <input type="text" placeholder="DOB">
+                                        <input type="text" placeholder="Post Code">
+                                    </div>
+                                    <p class="note">This is so we can show you the most suitalble holiday
+                                        deals for you. For example, so we can show you close to
+                                        home deals for spontaneous weekend getaways!
+                                        <br>
+                                        <br>
+
+                                        You can edit this later if your preferences change.</p>
+                                    <div class="btn_box">
+                                        <a class="skip btn transp_btn">Skip</a>
+                                        <a href="" class="purple_btn btn">Continue</a>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                        <div class="step3 step">
+                            <div class="step_body">
+                                <h2>Step 3. Your Subscription Type</h2>
+
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="item">
+                                                <h1>Go <br> Membership<span>$15 <span>per month</span></span></h1>
+                                                <p class="text">
+                                                    This membership type is perfect for those who lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tortor augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tortor augue.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="item">
+                                                <h1>Priority <br>
+                                                    Membership <span>$15 <span>per month</span></span></h1>
+                                                <p class="text">
+                                                    This membership type is perfect for those who lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tortor augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tortor augue.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="item">
+                                                <h1>Ultra <br> Membership <span>$15 <span>per month</span></span></h1>
+                                                <p class="text">
+                                                    This membership type is perfect for those who lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tortor augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tortor augue.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+
+                                <form>
+                                    <label class="custom-checkbox">
+                                        <input type="radio" checked name="yes_no" />
+                                        <span>Go Membership <br>(100% Free)</span>
+
+                                    </label>
+                                    <label class="custom-checkbox">
+                                        <input type="radio" name="yes_no" />
+                                        <span>Priority Membership <br>($15 per month)</span>
+                                    </label>
+                                    <label class="custom-checkbox">
+                                        <input type="radio" name="yes_no" />
+                                        <span>Ultra Membership <br>($20 per month)</span>
+                                    </label>
+                                    <p class="note">Still not sure which membership is best for you?
+                                        <br>
+                                        <br>
+                                        We recommend signing up to our Go Membership subscription risk free (100% free and no credit card needed) and upgrade your membership later. Don’t worry it’s easy to do. Alternatively, you can read more about membership types <a href="">here</a> or you can contact one of the team <a href="">here.</a></p>
+                                    <a href="" class="purple_btn btn">Finish</a>
+                                </form>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p class="step">Step 1 (of 4)</p>
+                    <a class="next" onclick="nextPrev(1)" id="nextBtn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+        //        $('.carousel').carousel({
+        //            interval: false
+        //        });
+
+        var currentTab = 0; // Current tab is set to be the first tab (0)
+        showTab(currentTab); // Display the current tab
+
+        function showTab(n) {
+            // This function will display the specified tab of the form...
+            var x = document.getElementsByClassName("step");
+            x[n].style.display = "flex";
+        }
+
+        function nextPrev(n) {
+            // This function will figure out which tab to display
+            var x = document.getElementsByClassName("step");
+
+            // Hide the current tab:
+            x[currentTab].style.display = "none";
+            // Increase or decrease the current tab by 1:
+            currentTab = currentTab + n;
+            // if you have reached the end of the form...
+            if (currentTab >= x.length - 1) {
+                // ... the form gets submitted:
+                document.getElementById("regForm").submit();
+                return false;
+            }
+            // Otherwise, display the correct tab:
+            showTab(currentTab);
+        }
+
+    </script>
+
+    <script src="/script/main.js"></script>
+    <script src="/script/jquery.min.js"></script>
+
+
+</body>
+
+</html>

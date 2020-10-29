@@ -5,25 +5,7 @@ h1 {
     margin: 0;
 }
 
-h6 {
-    font-size: 16px;
-    font-weight: 600;
-    margin: 0;
-    cursor: default;
-}
-
-.section1,
-.section3,
-.result_box {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .container_box {
-    width: 100%;
-    max-width: 1200px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -195,7 +177,6 @@ h6 {
     margin: 5px 0 10px;
     justify-content: flex-start;
 }
-
 
 .section1 .guest .age {
     width: 205px;
@@ -576,6 +557,7 @@ h6 {
     display: flex;
     width: 100%;
     flex-direction: column;
+    overflow-x: auto;
 }
 
 .result_box .result_slider .slider_hotel .active {
@@ -643,6 +625,7 @@ h6 {
     justify-content: center;
     align-items: flex-start;
     margin: 0 0 110px;
+    overflow-x: auto;
 }
 
 .result_box .result_slider .img_block {
@@ -1081,9 +1064,6 @@ footer .container_box {
 
 
 @media all and (max-width:1024px) {
-    .container_box {
-        max-width: 900px;
-    }
 
     .result_box .result_slider .item {
         flex-direction: column;
@@ -1105,7 +1085,6 @@ footer .container_box {
     .section1 form div {
         margin: 0 0 15px;
     }
-    
 
     .result_box .num {
         width: 68%;
@@ -1124,9 +1103,7 @@ footer .container_box {
 }
 
 @media all and (max-width:800px) {
-    header {
-        /*    position: relative;*/
-    }
+   
 
     .section1 {
         padding: 186px 0 65px;
@@ -1235,10 +1212,6 @@ footer .container_box {
     .result_box .slider_hotel h5 {
         font-size: 20px;
         margin: 30px 0 10px;
-    }
-
-    h1 {
-        font-size: 36px;
     }
 
     .result_box .slider_hotel .purple span,

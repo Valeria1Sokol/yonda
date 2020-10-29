@@ -1,0 +1,73 @@
+h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    cursor: default;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 300;
+    margin: 15px 0 0;
+    overflow: hidden;
+    cursor: default;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+span {
+    cursor: default;
+}
+
+.container_box {
+    max-width: 1200px;
+    width: 100%;
+}
+
+section,
+.slider_tree {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.lightpick,
+.lightpick section {
+    display: block;
+}
+
+@media all and (max-width:1200px) {
+    .container_box {
+        max-width: 900px;
+    }
+}
+
+@media all and (max-width:800px) {
+    h1 {
+        font-size: 36px;
+        line-height: 1.3;
+    }
+
+    .container_box {
+        max-width: 450px;
+    }
+}
+
+
+@media all and (max-width:425px) {
+    h1 {
+        font-size: 28px;
+        line-height: 1.4;
+    }
+}

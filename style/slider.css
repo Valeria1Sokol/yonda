@@ -11,9 +11,9 @@
     align-items: flex-end;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
     background-image: url(/img/slider_bg.png);
-    background-position: center;
+    background-position: 76% 50%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 122%;
     border-radius: 30px;
     color: white;
     font-weight: 300;

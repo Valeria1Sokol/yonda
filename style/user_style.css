@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-.container_box {
-    max-width: 1200px;
-    width: 100%;
-}
-
 header {
     position: relative;
     top: 0;
@@ -64,11 +59,7 @@ header .container_box .transp_btn {
 }
 
 section {
-    width: 100vw;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #F7F8FA;
     cursor: default;
     padding: 0 0 7vw;

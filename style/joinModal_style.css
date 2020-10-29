@@ -1,0 +1,537 @@
+.hide {
+    display: none;
+}
+
+#joinModal .modal-dialog {
+    width: 945px;
+    max-width: 945px;
+    margin: 5% auto;
+}
+
+#joinModal .modal-header {
+    background-color: #8739f6;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    height: 65px;
+    padding: 0 20px;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#joinModal .modal-dialog .modal-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#joinModal .modal-footer {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 0;
+    background-image: url(/img/section5_bg.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#joinModal .modal-footer .next {
+    color: white;
+    border-radius: 50%;
+    background-color: #8739f6;
+    width: 35px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-image: url(../img/arrow.png);
+    background-position: center;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+
+#joinModal .modal-body {
+    display: flex;
+    flex-direction: column;
+    padding: 90px 0 0;
+}
+
+#joinModal .modal-body .step {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#joinModal .modal-body .show_step {
+    display: flex;
+}
+
+#joinModal .modal-body .hide_step {
+    display: none;
+}
+
+#joinModal .modal-body .step_body {
+    padding: 0 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#joinModal .modal-body .step3 .step_body {
+    padding: 0 45px;
+    align-items: center;
+}
+
+#joinModal .modal-body h2 {
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+#joinModal .modal-body .step3 h2 {
+    width: 100%;
+    padding: 0 195px;
+}
+
+#joinModal .modal-body .tittle {
+    color: #8739f6;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 0;
+}
+
+#joinModal .modal-body form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#joinModal .modal-body .step3 form {
+    padding: 0 190px;
+    margin-top: 65px;
+}
+
+#joinModal .modal-body input,
+#joinModal .modal-body select {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #b6acac;
+    border-radius: 0;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    width: 100%;
+    height: 54px;
+    margin: 18px 0 0;
+}
+
+#joinModal .modal-body select {
+    background-image: url(/img/arrow_down.png);
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    appearance: none;
+    background-size: 4%;
+}
+
+#joinModal .modal-body input::placeholder {
+    color: black;
+}
+
+#joinModal .modal-body input:focus,
+#joinModal .modal-body input:active {
+    outline: none;
+}
+
+#joinModal .modal-body form div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#joinModal .modal-body form div input {
+    width: 48%;
+}
+
+#joinModal .modal-body .purple_btn {
+    width: 220px;
+    height: 45px;
+    font-size: 16px;
+    margin: 70px 0 90px auto;
+
+}
+
+#joinModal .modal-body .note {
+    font-size: 16px;
+    color: #b7b7b7;
+    margin: 50px 0;
+}
+
+#joinModal .modal-body .note a {
+    color: #8739f6;
+    border-bottom: 1px solid #8739f6;
+}
+#joinModal .modal-body .note a:hover{
+    text-decoration: none;
+}
+
+#joinModal .modal-body .step_footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #f2f2f2;
+    padding: 70px 240px;
+}
+
+#joinModal .modal-body .step_footer .tittle {
+    margin: 0;
+}
+
+#joinModal .modal-body .step_footer .btn_box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 45px 0 0;
+}
+
+#joinModal .modal-body .step_footer .btn {
+    padding: 0 50px;
+    width: 190px;
+    height: 40px;
+    font-size: 14px;
+}
+
+#joinModal .modal-body .face_btn {
+    color: white;
+    background-color: #4967b2;
+    background-image: url(../img/facebook.png);
+    background-position: 13% 50%;
+    background-repeat: no-repeat;
+    background-size: 9%;
+    border: 1px solid #4967b2;
+}
+
+#joinModal .modal-body .google_btn {
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    background-image: url(../img/google.png);
+    background-position: 13% 50%;
+    background-repeat: no-repeat;
+    background-size: 9%;
+}
+
+#joinModal .modal-body .skip {
+    width: 220px;
+    height: 45px;
+    font-size: 16px;
+    color: #8739f6;
+}
+#joinModal .modal-body .skip:hover{
+    color: white;
+}
+
+#joinModal .modal-body .step2 .btn_box {
+    margin: 70px 0 90px;
+}
+
+#joinModal .modal-body .step2 .btn_box .purple_btn {
+    margin: 0;
+}
+
+#joinModal .modal-body .custom-checkbox {
+    display: flex;
+}
+
+#joinModal .modal-body .custom-checkbox p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 0 10px;
+}
+
+#joinModal .modal-body .custom-checkbox > span {
+    margin: 6px 0 0;
+    width: auto;
+    height: auto;
+    position: relative;
+    border: none;
+}
+
+#joinModal .modal-body .custom-checkbox > span::before {
+    margin: 0 20px 26px 2px;
+}
+
+#joinModal .modal-body .custom-checkbox > span::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-radius: 50%;
+    z-index: 0;
+    position: absolute;
+    top: 6px;
+    left: -1px;
+    border: 1px solid #8739f6;
+}
+
+#joinModal .modal-body .custom-checkbox > input:checked + span {
+    color: #8739f6;
+    font-weight: 600;
+}
+
+#joinModal .modal-body .item {
+    width: 612px;
+    height: 375px;
+    color: white;
+    font-size: 16px;
+    background-image: url(../img/slider_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 45px;
+    margin: 70px auto 60px;
+    border-radius: 20px;
+}
+
+#joinModal .modal-body .item h1 {
+    font-size: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0;
+}
+
+#joinModal .modal-body .item h1 span {
+    font-size: 30px;
+}
+
+#joinModal .modal-body .item h1 span span {
+    font-size: 18px;
+}
+
+#joinModal .modal-body .carousel {
+    width: 100%;
+}
+
+#joinModal .modal-body .carousel-control-next,
+#joinModal .modal-body .carousel-control-prev {
+    color: #8739f6;
+}
+
+#joinModal .modal-body .carousel-indicators li {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #b7b7b7;
+    opacity: 1;
+    margin: 0 15px;
+}
+
+#joinModal .modal-body .carousel-indicators .active {
+    background-color: #8739f6;
+}
+
+#joinModal .modal-body .carousel-control-prev-icon,
+#joinModal .modal-body .carousel-control-next-icon {
+    width: 10px;
+    height: 15px;
+    opacity: 1;
+    background-image: url(../img/arrow__purple.png);
+}
+
+
+#joinModal .modal-body .carousel-control-prev-icon {
+    transform: rotate(180deg);
+}
+
+#joinModal .modal-body .carousel-control-next,
+#joinModal .modal-body .carousel-control-prev {
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: white;
+    width: 10%;
+}
+
+#joinModal .modal-body .carousel-control-prev {
+    justify-content: flex-start;
+}
+
+#joinModal .modal-body .carousel-indicators {
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
+@media all and (max-width:800px) {
+    #joinModal .modal-body {
+        padding: 70px 0 0;
+    }
+
+    #joinModal .modal-dialog {
+        width: 100%;
+        max-width: 450px;
+        margin: 10% auto;
+    }
+
+    #joinModal .modal-body .step_body {
+        padding: 0 30px;
+    }
+
+    #joinModal .modal-dialog .modal-title {
+        font-size: 14px;
+    }
+
+    #joinModal .modal-body h2 {
+        font-size: 20px;
+    }
+
+    #joinModal .modal-body .step3 h2 {
+        padding: 0 30px;
+    }
+
+    #joinModal .modal-body .tittle,
+    #joinModal .modal-body input,
+    #joinModal .modal-body select {
+        font-size: 12px;
+    }
+
+    #joinModal .modal-body .purple_btn {
+        width: 180px;
+        height: 40px;
+        font-size: 14px;
+        margin: 60px 0 70px auto;
+    }
+
+    #joinModal .modal-body .skip {
+        width: 180px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    #joinModal .modal-body .step_footer {
+        padding: 60px 30px 65px;
+    }
+
+    #joinModal .modal-body .step_footer .btn {
+        padding: 0 40px;
+        width: 155px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    #joinModal .modal-footer {
+        font-size: 16px;
+        height: 80px;
+    }
+
+    #joinModal .modal-body .note {
+        font-size: 12px;
+        margin: 40px 0;
+    }
+
+    #joinModal .modal-body .step3 .step_body {
+        padding: 0;
+    }
+
+    #joinModal .modal-body .step3 form {
+        padding: 0 30px;
+        margin-top: 80px;
+    }
+
+    #joinModal .modal-body .custom-checkbox > span {
+        font-size: 12px;
+    }
+
+    #joinModal .modal-body .custom-checkbox > span::before {
+        margin: 0 20px 8px 2px;
+    }
+
+    #joinModal .modal-body .item h1 {
+        font-size: 30px;
+        margin: 0 0 30px;
+    }
+
+    #joinModal .modal-body .item h1 span {
+        font-size: 18px;
+    }
+
+    #joinModal .modal-body .item h1 span span {
+        font-size: 11px;
+    }
+
+    #joinModal .modal-body .carousel-control-next,
+    #joinModal .modal-body .carousel-control-prev {
+        height: 15px;
+        top: 100%;
+    }
+
+    #joinModal .modal-body .item {
+        width: 87%;
+        height: auto;
+        padding: 30px;
+        margin: 50px auto;
+        font-size: 12px;
+    }
+
+    #joinModal .modal-body .carousel-indicators {
+        margin-top: 0;
+        margin-bottom: 0;
+        top: 97%;
+    }
+
+    #joinModal .modal-body .carousel-control-prev {
+        left: 30px;
+    }
+
+    #joinModal .modal-body .carousel-control-next {
+        right: 30px;
+    }
+
+    #joinModal .modal-body .step3 .note {
+        margin: 40px 0 0;
+    }
+}
+
+@media all and (max-width:425px) {
+    #joinModal .modal-dialog {
+        width: 100%;
+        max-width: 90%;
+        margin: 10% auto;
+    }
+
+    #joinModal .modal-body .item {
+        padding: 30px 15px;
+    }
+
+    #joinModal .modal-body .item h1 {
+        flex-wrap: wrap;
+    }
+}
