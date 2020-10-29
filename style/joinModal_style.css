@@ -143,7 +143,8 @@
     background-image: url(/img/arrow_down.png);
     background-position: 95% center;
     background-repeat: no-repeat;
-    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     background-size: 4%;
 }
 
@@ -164,7 +165,7 @@
     align-items: center;
 }
 
-#joinModal .modal-body form div input {
+#joinModal .modal-body .step2 form div input {
     width: 48%;
 }
 
@@ -186,7 +187,8 @@
     color: #8739f6;
     border-bottom: 1px solid #8739f6;
 }
-#joinModal .modal-body .note a:hover{
+
+#joinModal .modal-body .note a:hover {
     text-decoration: none;
 }
 
@@ -246,7 +248,8 @@
     font-size: 16px;
     color: #8739f6;
 }
-#joinModal .modal-body .skip:hover{
+
+#joinModal .modal-body .skip:hover {
     color: white;
 }
 

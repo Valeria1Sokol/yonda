@@ -6,8 +6,8 @@ section {
 header {
     position: relative;
 }
-.menu_desctop .transp_btn:hover
-{
+
+.menu_desctop .transp_btn:hover {
     color: white
 }
 
@@ -61,8 +61,8 @@ section .container_box {
     font-weight: 500;
     cursor: pointer;
 }
-.container_box .user_info .tooltip_box
-{
+
+.container_box .user_info .tooltip_box {
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -72,7 +72,7 @@ section .container_box {
     border: none;
     outline: none;
     margin: 0 0 0 10px;
-    
+
 }
 
 .container_box form {
@@ -162,7 +162,8 @@ section .container_box {
     background-image: url(/img/arrow_down.png);
     background-position: 95% center;
     background-repeat: no-repeat;
-    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     background-size: 4%;
 }
 
@@ -398,8 +399,8 @@ section .container_box {
     margin: 0 15px 0 0;
     color: #883ff4;
 }
-.container_box .right_box .btn_box .transp_btn:hover
-{
+
+.container_box .right_box .btn_box .transp_btn:hover {
     color: white;
 }
 
