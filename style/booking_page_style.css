@@ -760,6 +760,19 @@ section .container_box {
 
         height: 147px;
     }
+    .container_box .left_box .user_info
+    {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .container_box .user_info p
+    {
+        margin: 0 37px 0 15px; 
+    }
+    .container_box .left_box .user_img
+    {
+        margin: 0 0 10px;
+    }
 }
 
 @media all and (max-width:320px) {

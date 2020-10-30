@@ -146,6 +146,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     background-size: 4%;
+    background-color: white;
 }
 
 #joinModal .modal-body input::placeholder {
@@ -536,5 +537,16 @@
 
     #joinModal .modal-body .item h1 {
         flex-wrap: wrap;
+    }
+}
+
+@media all and (max-width:375px) {
+    #joinModal .modal-body .step_footer .btn {
+        width: 130px;
+    }
+
+    #joinModal .modal-body .skip,
+    #joinModal .modal-body .step2 .purple_btn {
+        width: 130px;
     }
 }
