@@ -297,22 +297,23 @@
                         <div class="step1 step">
                             <div class="step_body">
                                 <h2>Step 1. Your Details</h2>
-                                <p class="tittle">Create a Profile</p>
+                                <p class="tittle">Sign up to Yonda</p>
+                                <div class="btn_box">
+                                    <a class="face_btn btn">Facebook</a>
+                                    <a class="google_btn btn">Google</a>
+                                </div>
+                                <div class="border_line">
+                                    <p class="tittle_or">or</p>
+                                </div>
                                 <form>
-                                    <input type="text" placeholder="First Name">
-                                    <input type="text" placeholder="Last Name">
-                                    <input type="tel" placeholder="Mobile Number">
-                                    <input type="email" placeholder="Email">
-                                    <a href="" class="purple_btn btn">Continue</a>
+                                    <input type="text" placeholder="First Name" oninput="this.className = 'step1Input'" class="step1Input">
+                                    <input type="text" placeholder="Last Name" oninput="this.className = 'step1Input'" class="step1Input">
+                                    <input type="tel" placeholder="Mobile Number" oninput="this.className = 'step1Input'" class="step1Input">
+                                    <input type="email" placeholder="Email" oninput="this.className = 'step1Input'" class="step1Input">
+                                    <a class="purple_btn btn" onclick="nextPrev(1)" >Continue</a>
                                 </form>
                             </div>
-                            <div class="step_footer">
-                                <p class="tittle">Or sign up using</p>
-                                <div class="btn_box">
-                                    <a href="" class="face_btn btn">Facebook</a>
-                                    <a href="" class="google_btn btn">Google</a>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="step2 step">
                             <div class="step_body">
@@ -339,8 +340,8 @@
 
                                         You can edit this later if your preferences change.</p>
                                     <div class="btn_box">
-                                        <a class="skip btn transp_btn">Skip</a>
-                                        <a href="" class="purple_btn btn">Continue</a>
+                                        <a class="skip btn transp_btn"  onclick="nextPrev(-1)">Skip</a>
+                                        <a class="purple_btn btn" onclick="nextPrev(1)" >Continue</a>
                                     </div>
 
                                 </form>
@@ -411,7 +412,7 @@
                                         <br>
                                         <br>
                                         We recommend signing up to our Go Membership subscription risk free (100% free and no credit card needed) and upgrade your membership later. Don’t worry it’s easy to do. Alternatively, you can read more about membership types <a href="">here</a> or you can contact one of the team <a href="">here.</a></p>
-                                    <a href="" class="purple_btn btn">Finish</a>
+                                    <a class="purple_btn btn" onclick="nextPrev(1)">Finish</a>
                                 </form>
                             </div>
                         </div>
@@ -430,9 +431,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script>
-        //        $('.carousel').carousel({
-        //            interval: false
-        //        });
+        function modal() {
+            jQuery.noConflict();
+            $('#joinModal').modal('show')
+        }
 
         var currentTab = 0; // Current tab is set to be the first tab (0)
         showTab(currentTab); // Display the current tab
@@ -452,7 +454,8 @@
             // This function will figure out which tab to display
             var x = document.getElementsByClassName("step");
 
-
+            // Exit the function if any field in the current tab is invalid:
+            if (n == 1 && !validateForm()) return false;
             // Hide the current tab:
             x[currentTab].style.display = "none";
             // Increase or decrease the current tab by 1:
@@ -465,6 +468,26 @@
             }
             // Otherwise, display the correct tab:
             showTab(currentTab);
+        }
+
+        function validateForm() {
+            // This function deals with validation of the form fields
+            var x, y, i, valid = true;
+            x = document.getElementsByClassName("step");
+            y = x[currentTab].getElementsByClassName("step1Input");
+            // A loop that checks every input field in the current tab:
+            for (i = 0; i < y.length; i++) {
+                // If a field is empty...
+                if (y[i].value == "") {
+                    // add an "invalid" class to the field:
+                    y[i].className += " invalid";
+                    // and set the current valid status to false
+                    valid = false;
+                    y[i].placeholder = 'This information is required to proceed';
+
+                }
+            }
+            return valid; // return the valid status
         }
     </script>
 

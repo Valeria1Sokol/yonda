@@ -5,7 +5,7 @@
 #joinModal .modal-dialog {
     width: 945px;
     max-width: 945px;
-    margin: 5% auto;
+    margin: 3% auto;
 }
 
 #joinModal .modal-header {
@@ -13,12 +13,16 @@
     color: white;
     font-size: 16px;
     font-weight: 500;
-    height: 65px;
+    height: 3vw;
     padding: 0 20px;
     border-radius: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#joinModal .modal-content {
+    margin: 0;
 }
 
 #joinModal .modal-dialog .modal-title {
@@ -30,7 +34,7 @@
     color: black;
     font-size: 18px;
     font-weight: 400;
-    height: 95px;
+    height: 4vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,7 +64,7 @@
 #joinModal .modal-body {
     display: flex;
     flex-direction: column;
-    padding: 90px 0 0;
+    padding: 3vw 0;
 }
 
 #joinModal .modal-body .step {
@@ -111,6 +115,22 @@
     margin: 30px 0 0;
 }
 
+#joinModal .modal-body .tittle_or {
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    top: -13px;
+    padding: 0 10px;
+    background-color: white;
+}
+
+#joinModal .modal-body .border_line {
+    border-top: 1px solid #b6acac;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
 #joinModal .modal-body form {
     width: 100%;
     display: flex;
@@ -136,7 +156,15 @@
     color: black;
     width: 100%;
     height: 54px;
-    margin: 18px 0 0;
+    margin: 1vw 0 0;
+}
+#joinModal .modal-body input.invalid
+{
+   border-bottom: 1px solid red;
+}
+#joinModal .modal-body input.invalid::placeholder
+{
+    color: red;
 }
 
 #joinModal .modal-body select {
@@ -156,6 +184,7 @@
 #joinModal .modal-body input:focus,
 #joinModal .modal-body input:active {
     outline: none;
+    border-bottom: 1px solid #b6acac;
 }
 
 #joinModal .modal-body form div {
@@ -174,8 +203,12 @@
     width: 220px;
     height: 45px;
     font-size: 16px;
-    margin: 70px 0 90px auto;
+    margin: 2.5vw 0 0 auto;
+    color: white;
+}
 
+#joinModal .modal-body .purple_btn:hover {
+    color: #8739f6;
 }
 
 #joinModal .modal-body .note {
@@ -193,30 +226,20 @@
     text-decoration: none;
 }
 
-#joinModal .modal-body .step_footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background-color: #f2f2f2;
-    padding: 70px 240px;
-}
-
-#joinModal .modal-body .step_footer .tittle {
-    margin: 0;
-}
-
-#joinModal .modal-body .step_footer .btn_box {
+#joinModal .modal-body .btn_box {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 45px 0 0;
+    margin: 2.5vw 0 3.5vw;
 }
 
-#joinModal .modal-body .step_footer .btn {
+#joinModal .modal-body .step2 .btn_box {
+    margin: 0vw;
+}
+
+#joinModal .modal-body .btn {
     padding: 0 50px;
     width: 190px;
     height: 40px;
@@ -254,9 +277,6 @@
     color: white;
 }
 
-#joinModal .modal-body .step2 .btn_box {
-    margin: 70px 0 90px;
-}
 
 #joinModal .modal-body .step2 .btn_box .purple_btn {
     margin: 0;
@@ -392,6 +412,14 @@
 #joinModal .modal-body .carousel-indicators {
     margin-top: 60px;
     margin-bottom: 0;
+}
+
+@media all and (max-width:1440px)
+{
+    #joinModal .modal-body input, #joinModal .modal-body select
+    {
+        height: 45px;
+    }
 }
 
 @media all and (max-width:800px) {
