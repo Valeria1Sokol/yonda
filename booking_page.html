@@ -306,10 +306,10 @@
                                     <p class="tittle_or">or</p>
                                 </div>
                                 <form>
-                                    <input type="text" placeholder="First Name" oninput="this.className = 'step1Input'" class="step1Input">
-                                    <input type="text" placeholder="Last Name" oninput="this.className = 'step1Input'" class="step1Input">
-                                    <input type="tel" placeholder="Mobile Number" oninput="this.className = 'step1Input'" class="step1Input">
-                                    <input type="email" placeholder="Email" oninput="this.className = 'step1Input'" class="step1Input">
+                                    <input type="text" placeholder="First Name*" oninput="this.className = 'step1Input'" class="step1Input">
+                                    <input type="text" placeholder="Last Name*" oninput="this.className = 'step1Input'" class="step1Input">
+                                    <input type="tel" placeholder="Mobile Number*" oninput="this.className = 'step1Input'" class="step1Input">
+                                    <input type="email" placeholder="Email*" oninput="this.className = 'step1Input'" class="step1Input">
                                     <a class="purple_btn btn" onclick="nextPrev(1)" >Continue</a>
                                 </form>
                             </div>
@@ -483,7 +483,7 @@
                     y[i].className += " invalid";
                     // and set the current valid status to false
                     valid = false;
-                    y[i].placeholder = 'This information is required to proceed';
+//                    y[i].placeholder = 'This information is required to proceed';
 
                 }
             }
