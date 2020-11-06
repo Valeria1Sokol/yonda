@@ -550,6 +550,10 @@
     #joinModal .modal-body .step3 .note {
         margin: 40px 0 0;
     }
+    #joinModal .modal-header
+    {
+        padding: 20px;
+    }
 }
 
 @media all and (max-width:425px) {

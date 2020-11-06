@@ -1,44 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: 'Poppins', sans-serif;
-    color: black;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-img,
-a {
-    overflow: hidden;
-}
-
-ul li {
-    list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    cursor: default;
-}
-
-a {
-    color: white;
-
-}
 
 header {
 
@@ -49,7 +9,6 @@ header {
     align-items: center;
     position: absolute;
     top: 3.4vw;
-    /*    padding: 0 5.5vw;*/
 }
 
 header .container_box {
