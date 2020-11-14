@@ -6,12 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>YONDA</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/style/header_footer.css">
-    <link rel="stylesheet" href="/style/animation.css">
     <link rel="stylesheet" href="/style/general.css">
-    <link rel="stylesheet" href="/style/joinModal_style.css">
     <link rel="stylesheet" href="/style/booking_page_style.css">
 
 
@@ -175,8 +171,8 @@
                                 Resort & Spa</h1>
                         </div>
                         <div class="img_box">
-                           <div class="imgHotel"></div>
-<!--                            <img alt="" src="img/10.png">-->
+                            <div class="imgHotel"></div>
+                            <!--                            <img alt="" src="img/10.png">-->
                             <div class="stars">
                                 <img alt="" src="/img/star.png">
                                 <img alt="" src="/img/star.png">
@@ -282,16 +278,11 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="joinModal" tabindex="-2" role="dialog" aria-labelledby="joinModalLabel" aria-hidden="true" style="overflow-y: scroll">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Welcome to the new way to go</h5>
-                    <!--
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
--->
                 </div>
                 <div class="modal-body">
                     <form id="regForm" action="booking_page.html">
@@ -311,7 +302,7 @@
                                     <input type="text" placeholder="Last Name*" oninput="this.className = 'step1Input'" class="step1Input">
                                     <input type="tel" placeholder="Mobile Number*" oninput="this.className = 'step1Input'" class="step1Input">
                                     <input type="email" placeholder="Email*" oninput="this.className = 'step1Input'" class="step1Input">
-                                    <a class="purple_btn btn" onclick="nextPrev(1)" >Continue</a>
+                                    <a class="purple_btn btn" onclick="nextPrev(1)">Continue</a>
                                 </form>
                             </div>
 
@@ -341,8 +332,8 @@
 
                                         You can edit this later if your preferences change.</p>
                                     <div class="btn_box">
-                                        <a class="skip btn transp_btn"  onclick="nextPrev(-1)">Skip</a>
-                                        <a class="purple_btn btn" onclick="nextPrev(1)" >Continue</a>
+                                        <a class="skip btn transp_btn" onclick="nextPrev(-1)">Skip</a>
+                                        <a class="purple_btn btn" onclick="nextPrev(1)">Continue</a>
                                     </div>
 
                                 </form>
@@ -427,71 +418,53 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal_box">
+                    <div class="header">
+                        <p>You’re seeing this because you’re not signed in</p>
+                        <img alt="close" src="/img/close.png" class="close" data-dismiss="modal" aria-label="Close">
+                    </div>
+                    <div class="body">
+                        <img alt="plane" src="/img/plane.png">
+                        <p class="text">Boarding Pass Please</p>
+                        <h5>To take advantage of our exclusive<br>
+                            deals and book your next holiday,<br>
+                            you need to be a member.</h5>
+                        <div class="btn_box">
+                            <a class="purple_btn btn">Join for Free</a>
+                            <a class="transp_btn btn">Sign In</a>
+                        </div>
+                        <p class="title">Want exclusive access to thousands of well below RRP holidays?</p>
+                        <p class="title">
+                            Create an account and start browsing our exclusive holiday deals.<br>
+                            No credit card needed. New deals added daily.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="close_modal" data-dismiss="modal" aria-label="Close"><img alt="" src="/img/arrow.png"> No thanks, go back</p>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script>
+
+    <script type="text/javascript">
         function modal() {
             jQuery.noConflict();
-            $('#joinModal').modal('show')
+            $('#exampleModal').modal('show')
         }
-
-        var currentTab = 0; // Current tab is set to be the first tab (0)
-        showTab(currentTab); // Display the current tab
-
-
-        function showTab(n) {
-            // This function will display the specified tab of the form...
-            var x = document.getElementsByClassName("step");
-            x[n].style.display = "flex";
-            var text = document.getElementById("stepText");
-            var nn = n + 1;
-            text.innerHTML = "Step " + nn + " (of 3)";
-
-        }
-
-        function nextPrev(n) {
-            // This function will figure out which tab to display
-            var x = document.getElementsByClassName("step");
-
-            // Exit the function if any field in the current tab is invalid:
-            if (n == 1 && !validateForm()) return false;
-            // Hide the current tab:
-            x[currentTab].style.display = "none";
-            // Increase or decrease the current tab by 1:
-            currentTab = currentTab + n;
-            // if you have reached the end of the form...
-            if (currentTab >= x.length) {
-                // ... the form gets submitted:
-                document.getElementById("regForm").submit();
-                return false;
-            }
-            // Otherwise, display the correct tab:
-            showTab(currentTab);
-        }
-
-        function validateForm() {
-            // This function deals with validation of the form fields
-            var x, y, i, valid = true;
-            x = document.getElementsByClassName("step");
-            y = x[currentTab].getElementsByClassName("step1Input");
-            // A loop that checks every input field in the current tab:
-            for (i = 0; i < y.length; i++) {
-                // If a field is empty...
-                if (y[i].value == "") {
-                    // add an "invalid" class to the field:
-                    y[i].className += " invalid";
-                    // and set the current valid status to false
-                    valid = false;
-//                    y[i].placeholder = 'This information is required to proceed';
-
-                }
-            }
-            return valid; // return the valid status
+        // console.log($(window).width());
+        if ($(window).width() > 800) {
+            setTimeout(modal, 3000);
         }
     </script>
-
+    <script src="script/joing_script.js"></script>
     <script src="/script/main.js"></script>
     <script src="/script/jquery.min.js"></script>
 

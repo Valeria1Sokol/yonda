@@ -1,0 +1,300 @@
+.sectionStaf {
+    padding: 7vw 0;
+    background-image: url(/img/BG1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sectionStaf .container_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionStaf .left {
+    width: 507px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 40px 0 0;
+}
+
+
+.sectionStaf h1 {
+    margin: 15px 0 44px;
+    font-family: RecklessNeue;
+    letter-spacing: 1px;
+}
+
+.sectionStaf .text {
+    font-size: 16px;
+    margin-top: 65px;
+}
+
+.sectionStaf .item {
+    width: 510px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 21px 22px;
+    letter-spacing: -1px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.08);
+}
+
+.sectionStaf .item h5 {
+    font-size: 24px;
+    color: #f9ac90;
+    font-weight: 300;
+    margin: 0 0 10px;
+}
+
+.sectionStaf .item .img_block {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+.sectionStaf .item .img_block img {
+    width: 100%;
+}
+
+.sectionStaf .item .img_block p {
+    width: 170px;
+    text-align: center;
+    background: white;
+    color: black;
+    font-size: 24px;
+    font-weight: 300;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 2px 0;
+    margin: 0;
+}
+
+.sectionStaf .item .img_block .black {
+    background-color: black;
+    color: white;
+}
+
+.sectionStaf .item h2 {
+    color: black;
+    font-size: 38px;
+    font-weight: 300;
+    margin: 17px 0;
+    line-height: inherit;
+    overflow: hidden;
+}
+
+.sectionStaf .item div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.sectionStaf .price_mem {
+    color: #8739f6;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    margin: 0;
+}
+
+.sectionStaf .price_mem span {
+    text-decoration: line-through;
+    font-weight: 300;
+}
+
+.sectionStaf .item .stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+}
+
+.sectionStaf .details {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    width: 170px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 0 9px;
+    font-weight: 300;
+    transition: background-color .5s, color .5s, border 0s;
+    /*        transition: border 0s;*/
+    border: 2px solid black;
+}
+
+.sectionStaf .item .price_box {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: auto;
+}
+
+.sectionStaf .item .details {
+    border: none;
+}
+
+.sectionStaf .price_box p {
+    font-size: 18px;
+    color: #b3b3b3;
+    font-weight: 300;
+    margin: 0 0 10px;
+}
+
+.sectionStaf .price_box h1 {
+    margin: 0;
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sectionStaf .price_box h1 span {
+    font-size: 24px;
+    color: #b3b3b3;
+    font-weight: 300;
+}
+
+.sectionStaf .details:hover {
+    background: white;
+    color: black;
+}
+
+.sectionStaf .item .details:hover {
+    background: #8739f6;
+    color: white;
+}
+
+
+@media all and (max-width:800px) {
+
+    .sectionStaf .container_box {
+        flex-direction: column-reverse;
+    }
+
+    .sectionStaf .left {
+        width: 100%;
+        padding: 42px 31px 0;
+    }
+
+    .sectionStaf {
+        padding: 75px 0;
+    }
+
+    .sectionStaf h1 {
+        margin: 25px 0 62px;
+        font-size: 36px;
+    }
+
+    .sectionStaf .item .details {
+        width: 144px;
+        height: 38px;
+        font-size: 13.3px;
+        margin: 0 0 9px;
+        font-weight: 300;
+    }
+
+    .sectionStaf .item {
+        margin: 0 auto;
+        padding: 15px 16px;
+        width: 420px;
+    }
+
+    .sectionStaf .item h5 {
+        font-size: 20px;
+        margin: 0 0 10px;
+    }
+
+    .sectionStaf .item .img_block p {
+        width: 142px;
+        font-size: 20px;
+        padding: 2px 0;
+    }
+
+    .sectionStaf .item h2 {
+        font-size: 30px;
+        margin: 15px 0;
+    }
+
+    .sectionStaf .price_mem {
+        font-size: 14px;
+    }
+
+    .sectionStaf .item .stars {
+        width: 115px;
+    }
+
+    .section3 .item .price_box {
+        margin-top: 40px;
+    }
+
+    .sectionStaf .price_box p {
+        font-size: 16px;
+        margin: 0 0 5px;
+    }
+
+    .sectionStaf .price_box h1 {
+        margin: 0 5px 0 0;
+        font-size: 40px;
+    }
+
+    .sectionStaf .price_box h1 span {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width:425px) {
+
+    .sectionStaf .item {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:375px) {
+
+    .sectionStaf .item .price_box {
+        width: 100%;
+    }
+
+    .sectionStaf .price_mem {
+        width: auto;
+    }
+
+    .sectionStaf .item .details {
+        margin-top: 15px;
+    }
+
+    .sectionStaf .left {
+        width: 100%;
+        padding: 42px 0 0;
+    }
+
+    .sectionStaf .container_box {
+        max-width: 310px;
+    }
+
+    .sectionStaf .price_box h1 {
+        font-size: 30px;
+    }
+
+    .sectionStaf .price_box h1 span {
+        font-size: 13px;
+    }
+
+}

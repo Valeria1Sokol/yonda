@@ -1,5 +1,3 @@
-
-
 header {
 
     width: 100vw;
@@ -500,9 +498,17 @@ footer .icon5 {
     margin: 3.4vw 0 2.2vw;
     transition: all .5s;
 }
+.modal_box .body .btn_box:hover{
+    
+}
 
 .modal_box .body .purple_btn {
     margin: 0 20px 0 0;
+    color: white;
+}
+
+.modal_box .body .purple_btn:hover {
+    color: #8739f6;
 }
 
 .modal_box .body .title {

@@ -94,6 +94,14 @@ html *:after {
     padding: 0px 30px;
 }
 
+.transp_btn {
+    color: #8739f6;
+}
+
+.purple_btn {
+    color: white;
+}
+
 .transp_btn:before,
 .transp_btn:after {
     position: absolute;
@@ -131,7 +139,7 @@ html *:after {
 }
 
 .transp_btn:hover {
-    color: white;
+    color: white!important;
 }
 
 .purple_btn:hover {
@@ -157,6 +165,7 @@ html *:after {
 .btn a {
     transition: color .5s;
 }
+
 .purple_btn {
     background: #8739f6;
     background: linear-gradient(90deg, #8739f6 75%, #a849fc 95%);

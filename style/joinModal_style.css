@@ -54,7 +54,7 @@
     height: 35px;
     border: none;
     outline: none;
-    background-image: url(../img/arrow.png);
+    background-image: url(/img/arrow.png);
     background-position: center;
     background-size: 20%;
     background-repeat: no-repeat;
@@ -158,12 +158,12 @@
     height: 54px;
     margin: 1vw 0 0;
 }
-#joinModal .modal-body input.invalid
-{
-   border-bottom: 1px solid red;
+
+#joinModal .modal-body input.invalid {
+    border-bottom: 1px solid red;
 }
-#joinModal .modal-body input.invalid::placeholder
-{
+
+#joinModal .modal-body input.invalid::placeholder {
     color: red;
 }
 
@@ -249,7 +249,7 @@
 #joinModal .modal-body .face_btn {
     color: white;
     background-color: #4967b2;
-    background-image: url(../img/facebook.png);
+    background-image: url(/img/facebook.png);
     background-position: 13% 50%;
     background-repeat: no-repeat;
     background-size: 9%;
@@ -260,7 +260,7 @@
     color: black;
     border: 1px solid black;
     background-color: white;
-    background-image: url(../img/google.png);
+    background-image: url(/img/google.png);
     background-position: 13% 50%;
     background-repeat: no-repeat;
     background-size: 9%;
@@ -292,7 +292,21 @@
     margin: 0 0 0 10px;
 }
 
+#joinModal .custom-checkbox > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    cursor: pointer;
+}
+
 #joinModal .modal-body .custom-checkbox > span {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+/*    border-radius: 50%;*/
     margin: 6px 0 0;
     width: auto;
     height: auto;
@@ -300,8 +314,23 @@
     border: none;
 }
 
+#joinModal .custom-checkbox > input:checked + span::before {
+    border-color: #883ff4;
+    background-color: #883ff4;
+}
+
 #joinModal .modal-body .custom-checkbox > span::before {
     margin: 0 20px 26px 2px;
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 3px;
+    z-index: 0;
 }
 
 #joinModal .modal-body .custom-checkbox > span::after {
@@ -315,7 +344,7 @@
     z-index: 0;
     position: absolute;
     top: 6px;
-    left: -1px;
+    left: 0px;
     border: 1px solid #8739f6;
 }
 
@@ -329,7 +358,7 @@
     height: 375px;
     color: white;
     font-size: 16px;
-    background-image: url(../img/slider_bg.png);
+    background-image: url(/img/slider_bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -387,7 +416,7 @@
     width: 10px;
     height: 15px;
     opacity: 1;
-    background-image: url(../img/arrow__purple.png);
+    background-image: url(/img/arrow__purple.png);
 }
 
 
@@ -414,10 +443,10 @@
     margin-bottom: 0;
 }
 
-@media all and (max-width:1440px)
-{
-    #joinModal .modal-body input, #joinModal .modal-body select
-    {
+@media all and (max-width:1440px) {
+
+    #joinModal .modal-body input,
+    #joinModal .modal-body select {
         height: 45px;
     }
 }
@@ -550,8 +579,8 @@
     #joinModal .modal-body .step3 .note {
         margin: 40px 0 0;
     }
-    #joinModal .modal-header
-    {
+
+    #joinModal .modal-header {
         padding: 20px;
     }
 }
